@@ -1,0 +1,379 @@
+/**
+ *  Global
+ */
+
+
+/* apply natural box layout model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+} 
+.clearfix:after {
+    clear: both;
+}
+
+
+html {
+   font-family: 'Roboto', sans-serif;
+   font-size: 62.5%;
+   color: #333;
+}
+
+
+body {
+    margin: 0 auto;
+    font-size: 1.6rem;
+    background: #ddd;
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+
+a:link {
+    color: #444;
+    text-decoration: none;
+}
+a:visited {
+    color: #444;
+}
+a:hover {
+    color: #c3d2da;
+}
+a:active {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+
+/**
+ *  Profile
+ */
+
+.profile {
+    padding: 5px 20px 60px;
+    background: url('../img/bg.jpg') no-repeat scroll;
+    background-size: cover;
+    background-position: 30% 10%;
+    /*background: #9EAEB3;*/
+    width: 100%;
+}
+.profile-name {
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 0.3rem;
+}
+.profile-name span {
+    font-weight: 300;
+}
+.profile-title {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 5px;
+    letter-spacing: 0.1rem; 
+}
+
+.profile-nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+.profile-nav li {
+    display: inline-block;
+}
+
+
+.bio-wrap {
+    background: #c3d2da;
+    padding: 20px;
+}
+.bio {
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+
+
+
+
+/**
+ *  Projects
+ */
+
+.projects {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.projects h3 {
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.projects-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+.projects-half {
+    margin-top: 40px;
+}
+
+.projects-businesstheme:before {
+    content: "";
+    display: block;
+    padding-bottom: 50%;
+} 
+
+.projects-businesstheme {
+    background: url('../img/business-theme.png') no-repeat;
+    background-size: contain; 
+    width: 100%;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+
+.projects-googlepage:before {
+    content: "";
+    display: block;
+    padding-bottom: 50%;
+} 
+
+.projects-googlepage {
+    background: url('../img/googlepage.png') no-repeat;
+    background-size: contain; 
+    width: 100%;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+
+.projects p, .projects li {
+    padding-left: 20px;
+    font-size: 1.6rem;
+    text-align: left;
+}
+.projects ul {
+    margin-top: 10px;
+}
+.projects p {
+    margin-bottom: 0;
+}
+
+/**
+ *  Form
+ */
+
+.contact {
+    padding: 20px;
+    background: #c3d2da;
+}
+
+.contact h3 {
+    text-transform: uppercase;
+    color: #c3d2da;
+}
+
+
+.contact-form-wrap {
+    background: rgba(33, 33, 33, 0.7);
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+
+
+
+.form-textarea, .form-email {
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto 10px;
+    display: block;
+    border: none;
+    background: #eee;
+    color: #444;
+}
+
+.form-textarea:focus {
+    background: #ccc;
+    outline: none;
+
+}
+
+.form-email:focus {
+    background: #ccc;
+    outline: none;
+}
+
+
+.form-submit {
+    padding: 7px;
+    border: none;
+    background: tomato;
+    float: right;
+}
+
+.form-submit:hover {
+    background: orange;
+}
+
+
+
+
+/**
+ *  Media Queries
+ */
+
+@media only screen and (min-width: 500px) {
+
+/*font-size
+spacing
+
+
+*/
+
+}
+
+@media only screen and (min-width: 800px) {
+
+/*font size
+spacing
+hover
+
+*/
+
+
+
+
+body {
+    font-size: 2rem;
+}
+
+.pad10 {
+    padding-left: 10px;
+}
+.projects h3 {
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 6.5rem;
+}
+h2 {
+    font-size: 2.6rem;
+}
+h3 {
+    font-size: 2.2rem;
+}
+
+
+.profile {
+    padding: 5px 20px 120px;
+    background-position: 10% 50%;
+    background-attachment: fixed;
+}
+
+
+
+
+.projects {
+    padding-bottom: 90px;
+}
+
+.projects-businesstheme-desc {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
+.projects-businesstheme-desc p {
+    margin-top: 0;
+}
+
+.projects-businesstheme {
+    background: url('../img/business-themebw.png') no-repeat;
+    background-size: contain;
+    transition: background 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 50%;
+}
+
+.projects-businesstheme:hover {
+    background: url('../img/business-theme.png') no-repeat;
+    background-size: contain;
+    background-size: 100%;
+}
+
+
+.projects-googlepage-wrap {
+    margin-top: 22px;
+}
+
+.projects-googlepage-desc {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
+.projects-googlepage-desc p {
+    margin-top: 0;
+}
+
+.projects-googlepage {
+    background: url('../img/googlepagebw.png') no-repeat;
+    background-size: contain;
+    transition: background 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 50%;
+}
+
+.projects-googlepage:hover {
+    background: url('../img/googlepage.png') no-repeat;
+    background-size: contain;
+    background-size: 100%;
+}
+
+.contact {
+    background: url('../img/mapbw.jpg') no-repeat bottom;
+    background-size: cover;
+    padding-left: 0;
+}
+
+.contact h3 {
+    margin: 14px auto;
+}
+
+
+.contact-form-wrap {
+    max-width: 47.75%;
+    margin-left: 20px;
+}
+
+
+
