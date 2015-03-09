@@ -13,29 +13,31 @@
 
 <div class="wrapper">
 
-<!-- PROFILE -->
-    <div class="profile">
+<!-- HEADING -->
+    <heading>
+        <div class="heading-wrap">
+                    
+            <h1 class="heading-name">adrian<span>kelly</span></h1>
+            <h2 class="heading-title">front-end developer</h2>
                 
-        <h1 class="profile-name pad10">adrian<span>kelly</span></h1>
-        <h2 class="profile-title pad10">front end developer</h2>
-            
-            <nav class="profile-nav pad10">
-                <ul>
-                    <li><a href="#main">projects</a> / </li>
-                    <li><a href="http://github.com/adriankelly">github</a> / </li>
-                    <li><a href="http://twitter.com/adriankelly">twitter</a> / </li>
-                    <li><a href="#contactme" class="tocontactform">email me</a></li>
-                </ul>
-            </nav> <!-- End of profile-nav -->
+                <nav class="heading-nav">
+                    <ul>
+                        <li><a href="#projects">projects</a> / </li>
+                        <li><a href="http://github.com/adriankelly">github</a> / </li>
+                        <li><a href="http://twitter.com/adriankelly">twitter</a> / </li>
+                        <li><a href="#contactme" class="tocontactform">email me</a></li>
+                    </ul>
+                </nav> <!-- End of heading-nav -->
 
-    </div> <!-- End of profile -->
+        </div> <!-- End of heading-wrap -->
+    </heading>
 
 
 <!-- ABOUT ME -->
 
     <div class="bio-wrap">
         <div class="bio">
-            <p>Hi, I'm a junior front end developer keen to get involved in bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</p>
+            <p>Hi, I'm Adrian Kelly a junior Front-End Developer, music fan, and jogger who has recently moved from Melbourne to London. I'm keen to assist you with your next web project and help ensure its success.<span>If you'd like to get in contact, please send me an email using <a href="#contactme">this form</a> and I'll get back to you within 24 hours.</span></p>
         </div>
     </div>
 
@@ -45,68 +47,63 @@
 
 <!-- PROJECTS -->
 
-        <div class="projects">
+    <div class="projects" id="projects">
             
-            <h3>Projects</h3>
+        <h3>Projects</h3>
 
-            <div class="projects-wrap">
-                
-                <div class="projects-businesstheme-wrap">
-                    <div class="projects-businesstheme-desc">
-                        <p>Business themed responsive single-page website.</p>
-                            <ul>
-                                <li>Did this</li>
-                                <li>Did that</li>
-                            </ul>
-                    </div>  
-                    <div class="projects-businesstheme">
-                        <a href="#"></a>
-                    </div>
+        <div class="projects-wrap">
+            
+            <div class="projects-businesstheme-wrap">
+                <div class="projects-businesstheme-desc">
+                    <p>Business themed responsive single-page website.</p>
+                        <ul>
+                            <li>Built with reference to a Photoshop design, with relevant images being sliced from the design for use in the final site</li>
+                            <li>The only PSD file was a design for a desktop site. Consequently, the responsive aspects of the site were built by reference to the appearance of the site at particular widths. Breakpoints were created as dictated by the layout, rather than with reference to widths of specific tablet or mobile devices</li>
+                        </ul>
                 </div>  
-
-                <div class="projects-googlepage-wrap">
-                    <div class="projects-googlepage-desc">
-                        <p>Reproduced google homepage for Odin</p>
-                            <ul>
-                                <li>Did this</li>
-                                <li>Did that</li>
-                            </ul>                
-                    </div>
-                    <div class="projects-googlepage">
-                        <a href="#"></a>
-                    </div>
+                <div class="projects-businesstheme">
+                    <a href="#"></a>
                 </div>
+            </div>  <!-- End of projects-businesstheme-wrap -->
 
-
-                
+            <div class="projects-googlepage-wrap">
+                <div class="projects-googlepage-desc">
+                    <p>Reproduced Google homepage for <a herf="http://www.theodinproject.com">The Odin Project</a> - a web development training website</p>
+                        <ul>
+                            <li>The goal for this project was to recreate the Google homepage from scratch as quickly as possible</li>
+                            <li>The exercise reinforces foundational aspects of HTML and CSS</li>
+                        </ul>                
                 </div>
+                <div class="projects-googlepage">
+                    <a href="#"></a>
+                </div>
+            </div> <!-- End of projects-googlepage-wrap -->
 
-            </div>
+        </div> <!-- End of projects-wrap -->
 
-        
-            
-
-        </div> <!-- End of projects -->
+    </div> <!-- End of projects -->
 
 
 <!-- CONTACT FORM -->
 
             
-            <div class="contact" id="contactme">
-                
-                <div class="contact-form-wrap clearfix">
-                    <h3>Contact Me</h3>
-                    <form action="http://formspree.io/adriankellyweb@gmail.com">
-                        <textarea rows="10" name="name" placeholder="Your Message" class="form-textarea"></textarea>
-                        <input type="email" name="_replyto" placeholder="Your Email" class="form-email">
-                        <input type="submit" value="Send" class="form-submit">
-                        <input type="hidden" name="_next" value="thanks">
-                    </form>
-                </div> <!-- End of contact-form-wrap -->
-            </div> <!-- End of contact -->
+    <div class="contact" id="contactme">
+        
+        <div class="contact-form-wrap clearfix">
+            <h3>Contact Me</h3>
+            <form action="http://formspree.io/adriankellyweb@gmail.com">
+                <textarea rows="10" name="name" placeholder="Your Message" class="form-textarea"></textarea>
+                <input type="email" name="_replyto" placeholder="Your Email" class="form-email">
+                <input type="submit" value="Send" class="form-submit">
+                <input type="hidden" name="_next" value="thanks">
+            </form>
+        </div> <!-- End of contact-form-wrap -->
+
+    </div> <!-- End of contact -->
    
 
 
-</div>
+</div> <!-- End of wrapper -->
+
 </body>
 </html>
