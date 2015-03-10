@@ -29,74 +29,84 @@
         </div> <!-- End of header-wrap -->
     </header>
 
+    <main>
 
 <!-- ABOUT ME -->
 
-    <div class="bio-wrap">
-        <div class="bio">
-            <p>Hi, I'm Adrian Kelly a junior Front-End Developer, music fan, and jogger who has recently moved from Melbourne to London. I'm keen to assist you with your next web project and help ensure its success.<span>If you'd like to get in contact, please send me an email using <a href="#contactme">this form</a> and I'll get back to you within 24 hours.</span></p>
+        <div class="bio-wrap">
+            <div class="bio">
+                <p>Hi, I'm Adrian Kelly a junior Front-End Developer, music fan, and jogger who has recently moved from Melbourne to London. I'm keen to assist you with your next web project and help ensure its success.<span>If you'd like to get in contact, please send me an email using <a href="#contactme">this form</a> and I'll get back to you within 24 hours.</span></p>
+            </div>
         </div>
-    </div>
 
 
 
 
 
 <!-- PROJECTS -->
+        <div class="projects" id="projects">
+                
+            <h3>Projects</h3>
 
-    <div class="projects" id="projects">
-            
-        <h3>Projects</h3>
+            <div class="projects-wrap">
+                
+                <div class="projects-businesstheme-wrap">
+                    <div class="projects-businesstheme-desc">
+                        <p>Business themed responsive single-page website.</p>
+                            <ul>
+                                <li>Built with reference to a Photoshop design, with relevant images being sliced from the design for use in the final site</li>
+                                <li>The only PSD file was a design for a desktop site. Consequently, the responsive aspects of the site were built by reference to the appearance of the site at particular widths. Breakpoints were created as dictated by the layout, rather than with reference to widths of specific tablet or mobile devices</li>
+                            </ul>
+                    </div>  
+                    
 
-        <div class="projects-wrap">
-            
-            <div class="projects-businesstheme-wrap">
-                <div class="projects-businesstheme-desc">
-                    <p>Business themed responsive single-page website.</p>
-                        <ul>
-                            <li>Built with reference to a Photoshop design, with relevant images being sliced from the design for use in the final site</li>
-                            <li>The only PSD file was a design for a desktop site. Consequently, the responsive aspects of the site were built by reference to the appearance of the site at particular widths. Breakpoints were created as dictated by the layout, rather than with reference to widths of specific tablet or mobile devices</li>
-                        </ul>
-                </div>  
-                <div class="projects-businesstheme">
-                    <a href="https://adriankelly.github.io/business-theme/"></a>
-                </div>
-            </div>  <!-- End of projects-businesstheme-wrap -->
+                    <div class="projects-businesstheme">
+                        <a href="https://adriankelly.github.io/business-theme/" class="dark">
+                            <img src="img/business-theme.png" alt="Responsive business themed website">
+                        </a>
+                    </div>
 
-            <div class="projects-googlepage-wrap">
-                <div class="projects-googlepage-desc">
-                    <p>Reproduced Google homepage for <a href="http://www.theodinproject.com">The Odin Project</a> - a web development training website</p>
-                        <ul>
-                            <li>The goal for this project was to recreate the Google homepage from scratch as quickly as possible</li>
-                            <li>The exercise reinforces foundational aspects of HTML and CSS</li>
-                        </ul>                
-                </div>
-                <div class="projects-googlepage">
-                    <a href="https://adriankelly.github.io/google-homepage/"></a>
-                </div>
-            </div> <!-- End of projects-googlepage-wrap -->
 
-        </div> <!-- End of projects-wrap -->
+                </div>  <!-- End of projects-businesstheme-wrap -->
 
-    </div> <!-- End of projects -->
+                <div class="projects-googlepage-wrap">
+                    <div class="projects-googlepage-desc">
+                        <p>Reproduced Google homepage for <a href="http://www.theodinproject.com">The Odin Project</a> - a web development training website</p>
+                            <ul>
+                                <li>The goal for this project was to recreate the Google homepage from scratch as quickly as possible</li>
+                                <li>The exercise reinforces foundational aspects of HTML and CSS</li>
+                            </ul>                
+                    </div>
 
+                    <div class="projects-googlepage">
+                        <a href="https://adriankelly.github.io/google-homepage/" class="dark">
+                            <img src="img/googlepage.png" alt="Recreation of Google homepage">
+                        </a>
+                    </div>
+                </div> <!-- End of projects-googlepage-wrap -->
+
+            </div> <!-- End of projects-wrap -->
+
+        </div> <!-- End of projects -->
+    </main>
 
 <!-- CONTACT FORM -->
 
+    <footer>            
+        <div class="contact" id="contactme">
             
-    <div class="contact" id="contactme">
-        
-        <div class="contact-form-wrap clearfix">
-            <h3>Contact Me</h3>
-            <form action="http://formspree.io/adriankellyweb@gmail.com">
-                <textarea rows="10" name="name" placeholder="Your Message" class="form-textarea"></textarea>
-                <input type="email" name="_replyto" placeholder="Your Email" class="form-email">
-                <input type="submit" value="Send" class="form-submit">
-                <input type="hidden" name="_next" value="thanks">
-            </form>
-        </div> <!-- End of contact-form-wrap -->
+            <div class="contact-form-wrap clearfix">
+                <h3>Contact Me</h3>
+                <form action="http://formspree.io/adriankellyweb@gmail.com">
+                    <textarea rows="10" name="name" placeholder="Your Message" class="form-textarea"></textarea>
+                    <input type="email" name="_replyto" placeholder="Your Email" class="form-email">
+                    <input type="submit" value="Send" class="form-submit">
+                    <input type="hidden" name="_next" value="thanks">
+                </form>
+            </div> <!-- End of contact-form-wrap -->
 
-    </div> <!-- End of contact -->
-   
+        </div> <!-- End of contact -->
+    </footer>   
+
 </body>
 </html>
