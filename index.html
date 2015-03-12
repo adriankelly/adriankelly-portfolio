@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adrian Kelly</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
 <!-- HEADER -->
     <header>
         <div class="header-wrap">
+            <div class="header-wrap-inner">
                     
             <h1 class="header-name">adrian<span>kelly</span></h1>
             <h2 class="header-title">front-end developer</h2>
@@ -22,9 +23,12 @@
                         <li><a href="#projects">projects</a> / </li>
                         <li><a href="http://github.com/adriankelly">github</a> / </li>
                         <li><a href="http://twitter.com/adriankelly">twitter</a> / </li>
+                        <li><a href="skype:akelly76">skype</a> / </li>
                         <li><a href="#contactme" class="tocontactform">email me</a></li>
                     </ul>
                 </nav> <!-- End of header-nav -->
+
+            </div> <!-- End of header-wrap-inner -->
 
         </div> <!-- End of header-wrap -->
     </header>
@@ -35,8 +39,12 @@
 
         <div class="bio-wrap">
             <div class="bio">
-                <p>Hi, I'm Adrian Kelly a junior Front-End Developer, music fan, and jogger who has recently moved from Melbourne to London. I'm keen to assist you with your next web project and help ensure its success.<span>If you'd like to get in contact, please send me an email using <a href="#contactme">this form</a> and I'll get back to you within 24 hours.</span></p>
+                <p>Hi, I'm Adrian Kelly, a Front-End Developer.<br>I like music, and jogging and recently relocated from Melbourne to London.
             </div>
+            <div class="bio-contact">
+                <p>Get in touch with me using <a href="#contactme">this form</a> to discuss how we can ensure your next web project is a success.</p>
+            </div>
+            
         </div>
 
 
@@ -46,16 +54,18 @@
 <!-- PROJECTS -->
         <div class="projects" id="projects">
                 
-            <h3>Projects</h3>
+            
 
             <div class="projects-wrap">
-                
+               
+               <h3>Projects</h3>
+
                 <div class="projects-businesstheme-wrap">
                     <div class="projects-businesstheme-desc">
                         <p>Business themed responsive single-page website.</p>
                             <ul>
                                 <li>Built with reference to a Photoshop design, with relevant images being sliced from the design for use in the final site</li>
-                                <li>The only PSD file was a design for a desktop site. Consequently, the responsive aspects of the site were built by reference to the appearance of the site at particular widths. Breakpoints were created as dictated by the layout, rather than with reference to widths of specific tablet or mobile devices</li>
+                                <li>The only Photoshop file was a design for a desktop site. Consequently, the responsive aspects of the site were built by reference to the appearance of the site at particular widths. Breakpoints were created as dictated by the layout, rather than with reference to widths of specific tablet or mobile devices</li>
                             </ul>
                     </div>  
                     
@@ -94,7 +104,7 @@
 
     <footer>            
         <div class="contact" id="contactme">
-            
+            <div class="contact-wrap">
             <div class="contact-form-wrap clearfix">
                 <h3>Contact Me</h3>
                 <form action="http://formspree.io/adriankellyweb@gmail.com" method="post">
@@ -103,6 +113,8 @@
                     <input type="submit" value="Send" class="form-submit">
                 </form>
             </div> <!-- End of contact-form-wrap -->
+
+            </div> <!-- End of contact-wrap -->
 
         </div> <!-- End of contact -->
     </footer>   
