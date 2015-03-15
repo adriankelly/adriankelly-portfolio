@@ -7,123 +7,156 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" async></script>
-    <script src="scripts/script.min.js"></script>
+    <script src="js/script.min.js"></script>
 </head>
 <body>
 
-<div class="page-wrapper">
-<!-- HEADER -->
-    <header>
-        <div class="header-wrap">
-            <div class="header-wrap-inner">
-            <div class="name-wrap">       
-            <h1 class="header-name">adrian<span>kelly</span></h1>
-            </div>
-            <h2 class="header-title">front-end developer</h2>
+    <div class="page-wrapper">
+
+
+        <header>
+
+            <div class="header-bg">
+
+                <div class="header-wrap">
+                    <div class="header-name-wrap">       
+                        <h1 class="header-name">adrian<span>kelly</span></h1>
+                    </div> <!-- End of header-name-wrap -->
+
+                    <h2 class="header-title">front-end developer</h2>
+                    
+                    <nav class="header-nav">
+                        <ul>
+                            <li><a href="#projects">projects</a> / </li>
+                            <li><a href="https://github.com/adriankelly">github</a> / </li>
+                            <li><a href="https://twitter.com/adriankelly">twitter</a> / </li>
+                            <li><a href="skype:akelly76">skype</a> / </li>
+                            <li><a href="#contact-me">contact me</a></li>
+                        </ul>
+                    </nav> <!-- End of header-nav -->
+
+                </div> <!-- End of header-wrap-inner -->
+
+            </div> <!-- End of header-bg -->
+        </header>
+
+
+        <main>
+
+
+            <div class="bio-wrap"> <!-- Introduction -->
                 
-                <nav class="header-nav">
-                    <ul>
-                        <li><a href="#projects">projects</a> / </li>
-                        <li><a href="http://github.com/adriankelly">github</a> / </li>
-                        <li><a href="http://twitter.com/adriankelly">twitter</a> / </li>
-                        <li><a href="skype:akelly76">skype</a> / </li>
-                        <li><a href="#contactme" class="tocontactform">email me</a></li>
-                    </ul>
-                </nav> <!-- End of header-nav -->
-
-            </div> <!-- End of header-wrap-inner -->
-
-        </div> <!-- End of header-wrap -->
-    </header>
-
-    <main>
-
-<!-- ABOUT ME -->
-
-        <div class="bio-wrap">
-            <div class="bio">
-                <p>Hi, I'm Adrian Kelly, a Front-End Developer.<br>I like music, and jogging and recently relocated from Melbourne to London.</p>
-            </div>
-            <div class="bio-contact">
-                <p>Get in touch with me using <a href="#contactme">this form</a> to discuss how we can ensure your next web project is a success.</p>
-            </div>
-            
-        </div>
-
-
-
-
-
-<!-- PROJECTS -->
-        <div class="projects" id="projects">
+                <div class="bio-intro">
+                    <p>Hi, I'm Adrian Kelly, a Front-End Developer.<br>I like music, and jogging and recently relocated from Melbourne to London.</p>
+                </div>
                 
-            
+                <div class="bio-contact">
+                    <p>Get in touch with me using <a href="#contact-me">this form</a> to discuss how we can ensure your next web project is a success.</p>
+                </div>
+                
+            </div> <!-- End of bio-wrap -->
 
-            <div class="projects-wrap">
-               
-               <h3>Projects</h3>
+
+
+
+            <div class="projects-wrap" id="projects">
+                   
+                <h3>Projects</h3>
+
+                
+                <div class="projects-sketch-wrap">
+                    
+                    <div class="projects-sketch-desc">
+                        <p>Creation of an Etch-a-Sketch canvas using JavaScript and jQuery. Project idea sourced from <a href="http://www.theodinproject.com">The Odin Project</a> - a web development training website</p>
+                            <ul>
+                                <li>Etch-a-Sketch canvas entirely generated with JavaScript and jQuery</li>
+                                <li>Expanded upon original project idea by including form validation and custom width of canvas</li>
+                                <li>Users have the option of generating a sketch using black or randomly generated colours</li>
+                            </ul>                
+                    </div> <!-- End of projects-sketch-desc -->
+
+                    <div class="projects-sketch-img">
+                        <a href="https://adriankelly.github.io/etch-a-sketch/" class="dark">
+                            <img src="img/sketch.png" alt="Etch-a-Sketch in JavaScript">
+                        </a>
+                    </div>
+
+                </div> <!-- End of sketch-wrap -->
+
 
                 <div class="projects-businesstheme-wrap">
+
                     <div class="projects-businesstheme-desc">
                         <p>Business themed responsive single-page website.</p>
                             <ul>
-                                <li>Built with reference to a Photoshop design, with relevant images being sliced from the design for use in the final site</li>
-                                <li>The only Photoshop file was a design for a desktop site. Consequently, the responsive aspects of the site were built by reference to the appearance of the site at particular widths. Breakpoints were created as dictated by the layout, rather than with reference to widths of specific tablet or mobile devices</li>
+                                <li>Built from a Photoshop design of the site's layout on a desktop computer, with relevant images being sliced from this design</li>
+                                <li>Without the ability to rely upon designs for the site on handheld devices, responsive layout changes were dicated by the appearance of the site at particular widths</li>
                             </ul>
-                    </div>  
-                    
+                    </div> <!-- End of projects-businesstheme-desc --> 
 
-                    <div class="projects-businesstheme">
+                    <div class="projects-businesstheme-img">
                         <a href="https://adriankelly.github.io/business-theme/" class="dark">
                             <img src="img/business-theme.png" alt="Responsive business themed website">
                         </a>
                     </div>
 
-
                 </div>  <!-- End of projects-businesstheme-wrap -->
 
+
                 <div class="projects-googlepage-wrap">
+
                     <div class="projects-googlepage-desc">
                         <p>Reproduced Google homepage for <a href="http://www.theodinproject.com">The Odin Project</a> - a web development training website</p>
                             <ul>
                                 <li>The goal for this project was to recreate the Google homepage from scratch as quickly as possible</li>
                                 <li>The exercise reinforces foundational aspects of HTML and CSS</li>
                             </ul>                
-                    </div>
+                    </div> <!-- End of projects-googlepage-desc -->
 
-                    <div class="projects-googlepage">
+                    <div class="projects-googlepage-img">
                         <a href="https://adriankelly.github.io/google-homepage/" class="dark">
                             <img src="img/googlepage.png" alt="Recreation of Google homepage">
                         </a>
                     </div>
+
                 </div> <!-- End of projects-googlepage-wrap -->
+
 
             </div> <!-- End of projects-wrap -->
 
-        </div> <!-- End of projects -->
-    </main>
+        </main>
 
-<!-- CONTACT FORM -->
 
-    <footer>            
-        <div class="contact" id="contactme">
-            <div class="contact-wrap">
-            <div class="contact-form-wrap clearfix">
-                <h3>Contact Me</h3>
-                <form action="http://formspree.io/adriankellyweb@gmail.com" method="post">
-                    <textarea rows="10" name="name" placeholder="Your Message" class="form-textarea"></textarea>
-                    <input type="email" name="_replyto" placeholder="Your Email" class="form-email">
-                    <input type="submit" value="Send" class="form-submit">
-                </form>
-            </div> <!-- End of contact-form-wrap -->
 
-            </div> <!-- End of contact-wrap -->
 
-        </div> <!-- End of contact -->
-    </footer>   
+        <footer> <!-- Contact details --> 
 
-</div> <!-- End of page-wrapper -->
+            <div class="contact-bg" id="contact-me">
+
+
+                <div class="contact-form clearfix">
+                    
+                    <h3>Contact Me</h3>
+                    
+                    <form id="contact-me-form" action="http://formspree.io/adriankellyweb@gmail.com" method="post">
+                        <fieldset>
+                            <textarea type="text" rows="10" name="name" placeholder="Your Message" class="form-textarea" required></textarea>
+                            <input type="email" name="_replyto" placeholder="Your Email" class="form-email" required>
+                            <input type="submit" id="submit" value="Send" class="form-submit">
+                        </fieldset>
+                    </form>
+                
+                </div> <!-- End of contact-form -->
+
+
+            </div> <!-- End of contact-bg -->
+        
+        </footer>   
+
+
+
+
+    </div> <!-- End of page-wrapper -->
 
 </body>
 </html>
