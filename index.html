@@ -27,12 +27,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="header-bg">
 
                 <div class="header-wrap">
-                    <div class="header-name-wrap">       
+                    <div class="header-name-wrap">
                         <h1 class="header-name">adrian<span>kelly</span></h1>
                     </div> <!-- End of header-name-wrap -->
 
                     <h2 class="header-title">front-end developer</h2>
-                    
+
                     <nav class="header-nav">
                         <ul>
                             <li><a href="#projects">projects</a> / </li>
@@ -53,34 +53,71 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
             <div class="bio-wrap"> <!-- Introduction -->
-                
+
                 <div class="bio-intro">
-                    <p>Hi, I'm Adrian Kelly, a Front-End Developer.<br>I like music and jogging, and recently relocated from Melbourne to London.</p>
+                    <p>Hi, I'm Adrian Kelly, a Front-End Developer.<br>I like music, black coffee, and jogging, and recently relocated from Melbourne to London.</p>
                 </div>
-                
+
                 <div class="bio-contact">
                     <p>Get in touch with me using <a href="#contact-me">this form</a> to discuss how we can ensure your next web project is a success.</p>
                 </div>
-                
+
             </div> <!-- End of bio-wrap -->
 
 
 
 
             <div class="projects-wrap" id="projects">
-                   
+
                 <h3>Projects</h3>
 
-                
+                <div class="projects-breezeplease-wrap">
+
+                    <div class="projects-breezeplease-desc">
+                        <p>Music blog featuring curated list of tracks</p>
+                        <ul>
+                            <li>Built within the AngularJS framework employing custom filters, directives, services</li>
+                            <li>Using the $http AngularJS service, returns wind speed from the Yahoo Weather API</li>
+                            <li>Search input string manipulated prior to the $http request to enable more accurate wind speed results as user enters region or country</li>
+                            <li>Animations and graphics are entirely CSS and react to returned wind speed after user input</li>
+                        </ul>
+                    </div> <!-- End of projects-breezeplease-desc -->
+
+                    <div class="projects-breezeplease-img">
+                        <a href="http://breezeplease.com/" class="dark">
+                            <img src="img/breezeplease.png" alt="Breezeplease fetch current wind speed anywhere in the world">
+                        </a>
+                    </div>
+
+                </div> <!-- End of projects-breezeplease-wrap -->
+
+                    <div class="projects-chaustracks-desc">
+                        <p>Music blog featuring curated list of tracks</p>
+                            <ul>
+                                <li>Uses PHP throughout, with WordPress as the CMS for easy updating of content by authors</li>
+                                <li>AJAX employed for lazy loading of older posts on the homepage and for loading posts filtered by month on the archives page</li>
+                                <li>Site created within the Bootstrap framework, with Sass used during the build process</li>
+                            </ul>
+                    </div> <!-- End of projects-chaustracks-desc -->
+
+                    <div class="projects-chaustracks-img">
+                        <a href="http://chaustracks.com/" class="dark">
+                            <img src="img/chaustracks.png" alt="Chaus tracks a music blog site">
+                        </a>
+                    </div>
+
+                </div> <!-- End of projects-chaustracks-wrap -->
+
+
                 <div class="projects-sketch-wrap">
-                    
+
                     <div class="projects-sketch-desc">
                         <p>Creation of an Etch-a-Sketch canvas using JavaScript and jQuery. Project idea sourced from <a href="http://www.theodinproject.com">The Odin Project</a> - a web development training website</p>
                             <ul>
                                 <li>Etch-a-Sketch canvas entirely generated with JavaScript and jQuery</li>
                                 <li>Expanded upon original project idea by including form validation and custom width of canvas</li>
                                 <li>Users have the option of generating a sketch using black or randomly generated colours</li>
-                            </ul>                
+                            </ul>
                     </div> <!-- End of projects-sketch-desc -->
 
                     <div class="projects-sketch-img">
@@ -100,7 +137,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <li>Built from a Photoshop design of the site's layout on a desktop computer, with relevant images being sliced from this design</li>
                                 <li>Without the ability to rely upon designs for the site on handheld devices, responsive layout changes were dicated by the appearance of the site at particular widths</li>
                             </ul>
-                    </div> <!-- End of projects-businesstheme-desc --> 
+                    </div> <!-- End of projects-businesstheme-desc -->
 
                     <div class="projects-businesstheme-img">
                         <a href="https://adriankelly.github.io/business-theme/" class="dark">
@@ -111,23 +148,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>  <!-- End of projects-businesstheme-wrap -->
 
 
-                <div class="projects-googlepage-wrap">
 
-                    <div class="projects-googlepage-desc">
-                        <p>Reproduced Google homepage for <a href="http://www.theodinproject.com">The Odin Project</a> - a web development training website</p>
-                            <ul>
-                                <li>The goal for this project was to recreate the Google homepage from scratch as quickly as possible</li>
-                                <li>The exercise reinforces foundational aspects of HTML and CSS</li>
-                            </ul>                
-                    </div> <!-- End of projects-googlepage-desc -->
-
-                    <div class="projects-googlepage-img">
-                        <a href="https://adriankelly.github.io/google-homepage/" class="dark">
-                            <img src="img/googlepage.png" alt="Recreation of Google homepage">
-                        </a>
-                    </div>
-
-                </div> <!-- End of projects-googlepage-wrap -->
 
 
             </div> <!-- End of projects-wrap -->
@@ -137,15 +158,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-        <footer> <!-- Contact details --> 
+        <footer> <!-- Contact details -->
 
             <div class="contact-bg" id="contact-me">
 
 
                 <div class="contact-form clearfix">
-                    
+
                     <h3>Contact Me</h3>
-                    
+
                     <form id="contact-me-form" action="http://formspree.io/hello@adriankelly.net" method="post">
                         <fieldset>
                             <textarea type="text" rows="10" name="name" placeholder="Your Message" class="form-textarea" required></textarea>
@@ -153,13 +174,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <input type="submit" id="submit" value="Send" class="form-submit">
                         </fieldset>
                     </form>
-                
+
                 </div> <!-- End of contact-form -->
 
 
             </div> <!-- End of contact-bg -->
-        
-        </footer>   
+
+        </footer>
 
 
 
