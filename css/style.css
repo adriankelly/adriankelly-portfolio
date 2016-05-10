@@ -162,7 +162,6 @@ a:active {
     padding: 10px;
 }
 
-
 .bio-contact {
     display: block;
     margin: 20px auto 0;
@@ -268,7 +267,7 @@ a.dark:hover img {
 .contact-bg {
     background: url('../img/map2.jpg') no-repeat 80% 0;
     background-size: cover;
-    padding: 20px 0 200px;
+    padding: 20px 0 60px
 }
 
 
@@ -301,6 +300,7 @@ fieldset {
     border: none;
     background: #ddd;
     font-weight: 300;
+    font-size: 1.6rem;
 }
 
 .form-textarea:focus,
@@ -316,6 +316,7 @@ fieldset {
     background: white;
     float: right;
     outline: none;
+    cursor: pointer;
 }
 
 .form-submit:hover {
@@ -347,7 +348,12 @@ fieldset {
  */
 
 @media only screen and (min-width: 500px) {
-
+    .bio-contact,
+    .bio-intro,
+    .contact-form,
+    .header-wrap {
+        width: 80%
+    }
 
     body {
         font-size: 1.8rem;
@@ -538,6 +544,10 @@ fieldset {
 
     .contact-bg {
         background-position: 30%;
+    }
+    .contact-form {
+        width: 35.5%;
+        margin-left: 121px
     }
 
 
