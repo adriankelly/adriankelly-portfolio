@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   // Validate contact form
 
-  $("#contact-me-form").validate();
+  // $("#contact-me-form").validate();
 
 
 
