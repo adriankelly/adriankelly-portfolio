@@ -19,6 +19,13 @@ $(document).ready(function() {
 
 
 
+  // Validate contact form
+
+  $("#contact-me-form").validate();
+
+
+
+
   // Remove internal link hash from URL
 
   if(window.location.hash === "projects" || window.location.hash === "contact-me") {

@@ -58,6 +58,8 @@ h3 {
 .page-wrapper {
     margin: 0 auto;
     max-width: 1400px;
+        background: url('../img/bg2.jpg') no-repeat fixed;
+    background-size: contain;
 }
 
 
@@ -85,9 +87,9 @@ a:active {
  */
 
 .header-bg {
-    background: #e9c184;
-    background: url('../img/bg-sm.jpg') no-repeat fixed;
-    background-size: contain;
+    /*background: #e9c184;*/
+/*    background: url('../img/bg2.jpg') no-repeat fixed;
+    background-size: contain;*/
 
     padding: 120px 0 0;
 }
@@ -95,7 +97,7 @@ a:active {
 
 .header-wrap {
     margin: -15px auto 0;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.4);
     max-width: 100%;
     text-align: center;
     padding: 5px 10px 0;
@@ -134,6 +136,7 @@ a:active {
     list-style: none;
     padding-left: 0;
     margin-top: 0;
+    margin-bottom: 0;
     font-weight: 500;
 }
 
@@ -142,6 +145,9 @@ a:active {
     font-size: 1.5rem;
 }
 
+#main-wrap {
+  background: rgba(255,255,255,0.4);
+}
 
 
 
@@ -161,6 +167,7 @@ a:active {
     margin-top: 15px;
     padding: 10px;
 }
+
 
 .bio-contact {
     display: block;
@@ -267,7 +274,7 @@ a.dark:hover img {
 .contact-bg {
     background: url('../img/map2.jpg') no-repeat 80% 0;
     background-size: cover;
-    padding: 20px 0 60px
+    padding: 20px 0 200px;
 }
 
 
@@ -300,7 +307,6 @@ fieldset {
     border: none;
     background: #ddd;
     font-weight: 300;
-    font-size: 1.6rem;
 }
 
 .form-textarea:focus,
@@ -316,8 +322,6 @@ fieldset {
     background: white;
     float: right;
     outline: none;
-    font-size: 1.6rem;
-    cursor: pointer;
 }
 
 .form-submit:hover {
@@ -349,12 +353,7 @@ fieldset {
  */
 
 @media only screen and (min-width: 500px) {
-    .bio-contact,
-    .bio-intro,
-    .contact-form,
-    .header-wrap {
-        width: 80%
-    }
+
 
     body {
         font-size: 1.8rem;
@@ -376,7 +375,7 @@ fieldset {
 
 
     .header-bg {
-        background: url('../img/bg-md.jpg') no-repeat fixed;
+        background: url('../img/bg2.jpg') no-repeat fixed;
         background-position: center;
         background-size: cover;
         padding: 200px 0 0;
@@ -475,7 +474,7 @@ fieldset {
 
     .header-bg {
         padding: 265px 0 0;
-        background: url('../img/bg-lg.jpg') no-repeat center fixed;
+        background: url('../img/bg2.jpg') no-repeat center fixed;
         background-size: cover;
     }
 
@@ -545,10 +544,6 @@ fieldset {
 
     .contact-bg {
         background-position: 30%;
-    }
-    .contact-form {
-        width: 35.5%;
-        margin-left: 121px
     }
 
 
