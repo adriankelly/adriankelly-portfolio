@@ -4,21 +4,20 @@
 }
 
 html {
- font-family: 'Roboto', sans-serif;
+ font-family: 'Inconsolata', sans-serif;
  font-size: 62.5%;
  color: #333;
- font-weight: 300;
+ font-weight: 400;
  background: black;
 }
 
 body {
     font-size: 1.6rem;
     margin: 0;
-    padding-bottom: 5%;
 }
 
-h1 { font-size: 7.6rem; letter-spacing: 0.4rem;}
-h2 { font-size: 3.9rem;}
+h1 { font-size: 8.5rem; letter-spacing: 0.5rem; color: #F3A13A;}
+h2 { font-size: 5rem; color: #B0BCC0;}
 h3 {
   font-size: 3rem;
   font-weight: 500;
@@ -32,89 +31,106 @@ h3 {
   display: block;
   position: relative;
   max-width: 100%;
+  /*height: 3648px;*/
+  padding-bottom: 123%;
   opacity: 0;
+  overflow: hidden;
 }
 
 
 #main-background {
   position: fixed;
   top: 0;
-  background: url('../img/bg2.jpg') no-repeat fixed;
-  background-position: center;
-  height: 100%;
+  background: url('../img/bg.jpg') no-repeat fixed;
+  background-size: cover;
   width: 100%;
+  height: 100%;
   opacity: 0;
+}
+
+#main-background-dark {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
 }
 
 #header-container {
-  text-align: center;
-  padding: 5px 10px 0;
+  text-align: right;
+  padding: 1%;
+  left: -48%;
   opacity: 0;
+  width: 48%;
+ position:fixed;
+ top: 4.5%;
+ background: rgba(255,255,255,0.1);
 }
 
+
+#header-name span {
+    letter-spacing: 0.5rem;
+    font-weight: 400;
+    margin-left: 3.5%;
+}
 
 #header-job-title {
     text-transform: uppercase;
-    margin-top: 8px;
-    margin-bottom: 0;
-    letter-spacing: 0.13rem;
+    margin-right: 7.7%;
+    margin-top: -1%;
+    letter-spacing: 0.6rem;
 }
 
-
-
-#bio-container {
-  text-align: center;
+#projects {
+  width: 50%;
+  position: absolute;
+  margin-left: 49%;
+  padding-bottom: 4.5%;
+  /*background: rgba(255,255,255,0.4);*/
   opacity: 0;
+  overflow: scroll;
 }
 
 .projects-container {
   margin: 0 auto;
   overflow: hidden;
   margin-top: 5%;
+
   width: 80%;
-  background: rgba(255,255,255,0.4);
+ background: rgba(255,255,255,0.1);
   cursor: pointer;
   position: relative;
-  opacity: 0;
 }
 
 .header-nav {
-  margin-top: 8px;
-  padding-bottom: 2%;
+  margin-top: 2%;
 }
 .header-nav ul {
     list-style: none;
-    padding-left: 0;
+    padding-right: 3.5%;
     margin-top: 0;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .header-nav li {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    margin-left: 4%;
+    color: #B0BCC0;
 }
 
-#projects,
+
+
 #contact {
-  width: 80%;
-  position: relative;
-  margin: 0 auto;
-  margin-top: 5%;
+  width: 50%;
+  width: 48%;
+  position:fixed;
+  top: 40%;
+  padding-bottom: 3%;
+  /*background: rgba(255,255,255,0.4);*/
   opacity: 0;
-  padding-bottom: 4.5%;
-  background: rgba(255,255,255,0.2);
-}
-
-
-#bio {
-  width: 90%;
-  margin: 0 auto;
-  line-height: 3rem;
-  text-align: center;
-  padding: 2%;
-}
-#bio p {
-    font-size: 2rem;
+  overflow: scroll;
 }
 
 #breezeplease { background-image: url('../img/breezeplease.png'); }
@@ -151,16 +167,12 @@ h3 {
   background: rgba(255,255,255,0.2);
 }
 
-
-
-
 #contact-form {
-  background: rgba(118,124,124,0.9);
-  width: 65%;
+  background: rgba(255,255,255,0.2);
+  width: 100%;
   padding: 10px;
-  border-radius: 5px;
-  margin: 0 auto;
-  margin-top: 5%;
+  /*border-radius: 5px;*/
+  /*margin: 0 auto;*/
 }
 
 fieldset {
@@ -178,20 +190,20 @@ fieldset {
   margin: 0 auto 10px;
   display: block;
   border: none;
-  background: #ddd;
+  background: rgba(255,255,255,0.2);
 
-  font-weight: 300;
-  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 2rem;
 }
 
 .form-textarea:focus,
 .form-email:focus {
-  background: #ccc;
+  background: rgba(255,255,255,0.8);
   outline: none;
 }
 
 .form-submit {
-  padding: 10px 40px;
+  padding: 8px 30px;
   border: 3px solid #333;
   background: white;
   font-size: 1.8rem;
@@ -201,13 +213,14 @@ fieldset {
 }
 
 .form-submit:hover {
-  background-color: #D1E2F6;
+  background-color: #F3B28C;
   border: 3px solid #14c8ff;
 }
 
 #contact-form label.error {
   display: block;
   width: 100%;
+  color: #fff;
   font-size: 1.6rem;
   font-weight: 500;
   margin-top: -4px;
@@ -221,14 +234,13 @@ fieldset {
 }
 
 
-a:link,
-a:visited {
-  color: #333;
+a {
+  color: #F3A13A;
   text-decoration: none;
 }
 
 a:hover {
-  color: #D1E2F6;
+  color: #F40B2D;
 }
 
 a:active {
@@ -237,9 +249,14 @@ a:active {
   left: 5px;
 }
 
+.currentLink {
+  color: #DF0014;
+}
+
+
 .dark {
   display: block;
-  background: #D1E2F6;
+  background: #B0BCC0;
   width: 100%;
   transition: all 0.3s linear;
   opacity: 0;
@@ -249,14 +266,16 @@ a:active {
     opacity: 0.9;
 }
 
+/*
 @media only screen and (min-width: 500px) {
 
 
 .projects-container {
-  width: 47.5%;
+  width: 100%;
   display: inline-block;
   margin-left: 1.6%;
 }
 
 
 }
+*/
