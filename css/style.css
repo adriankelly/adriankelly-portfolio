@@ -30,9 +30,9 @@ h3 {
 #main-container {
   display: block;
   position: relative;
-  max-width: 100%;
+  width: 100%;
   /*height: 3648px;*/
-  padding-bottom: 123%;
+  /*padding-bottom: 100%;*/
   opacity: 0;
   overflow: hidden;
 }
@@ -82,10 +82,12 @@ h3 {
     letter-spacing: 0.6rem;
 }
 
+
 #projects {
-  width: 50%;
-  position: absolute;
-  margin-left: 49%;
+  width: 90%;
+  position: relative;
+  margin-top: 55%;
+  margin-left: 23%;
   padding-bottom: 4.5%;
   /*background: rgba(255,255,255,0.4);*/
   opacity: 0;
@@ -96,7 +98,7 @@ h3 {
   margin: 0 auto;
   overflow: hidden;
   margin-top: 5%;
-
+  display: inline-block;
   width: 80%;
  background: rgba(255,255,255,0.1);
   cursor: pointer;
@@ -264,6 +266,25 @@ a:active {
 
 .dark:hover {
     opacity: 0.9;
+}
+
+
+
+
+.down-arrow {
+  position: absolute;
+  left: 50%;
+  top: 15.5%;
+  width: 5%;
+  height: 5%;
+}
+
+#down-arrow-bg {
+  opacity: 0;
+}
+
+#down-arrow-glow {
+  opacity: 0;
 }
 
 /*
