@@ -1,105 +1,120 @@
-*, *:before, *:after {
+/* === Global === */
+
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
+  border: 1px solid green;
 }
 
 html {
- font-family: 'Josefin Sans', sans-serif;
- font-size: 62.5%;
- background-color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 62.5%;
+  background-color: black;
 }
 
 body {
-    font-size: 1.6rem;
-    margin: 0;
+  font-size: 1.6rem;
+  margin: 0;
 }
-
-h1 { font-size: 10rem; letter-spacing: 0.5rem; color: #FFF; margin-bottom: 0; margin-top: 1%}
-h2 { font-size: 3.5rem; color: #B0BCC0;}
-h3 {
-  font-size: 3rem;
-  font-weight: 500;
-  padding-left: 3%;
-  padding-top: 3%;
-}
-
 
 
 #main-container {
-  display: block;
-  position: relative;
+  position: absolute;
   width: 100%;
-  /*height: 3648px;*/
-  /*padding-bottom: 100%;*/
+  height: 100%;
+  top: 0;
+  left: 0;
   opacity: 0;
   overflow: hidden;
 }
 
-
-#main-background {
-  position: fixed;
-  top: 0;
-  background: url('../img/bg.jpg') no-repeat fixed;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-#main-background-dark {
-  position: fixed;
-  top: 0;
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-}
-
-#main-background-black {
+.main-bg {
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
-}
-
-.full-black {
   opacity: 1;
-  background-color: black;
 }
+
+#main-bg-img {
+  background: url('../img/bg.jpg') no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+#main-bg-cover {
+  background-color: black;
+  opacity: 0.3;
+}
+
+.main-bg-blackout {
+  background-color: #000;
+  opacity: 1;
+}
+
+#switch {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  cursor: pointer;
+}
+.front-btn {
+  fill: #ff8800;
+}
+#back-btn {
+  fill: transparent;
+  stroke: #ff8800;
+}
+
+
+
+/* === Header === */
 
 #header-container {
   text-align: right;
   padding: 1%;
-  left: -48%;
-  opacity: 0;
+  left: 0;
   width: 48%;
- position:fixed;
- top: 4.5%;
- background: rgba(255,255,255,0.1);
+  position: absolute;
+  top: 4.5%;
+  background: rgba(255, 255, 255, 0.1);
 }
 
+#header-name {
+  font-size: 10rem;
+  letter-spacing: 0.5rem;
+  color: #FFF;
+  margin-bottom: 0;
+  margin-top: 1%
+}
 
 #header-name span {
-    letter-spacing: 0.5rem;
-    font-weight: 400;
-    margin-left: 3.5%;
+  letter-spacing: 0.5rem;
+  font-weight: 400;
+  margin-left: 3.5%;
 }
 
 #header-job-title {
-    text-transform: uppercase;
-    margin-right: 7%;
-    letter-spacing: 0.6rem;
+  text-transform: uppercase;
+  margin-right: 7%;
+  letter-spacing: 0.6rem;
+  font-size: 3.5rem;
+  color: #B0BCC0;
 }
 
 
+/* === Projects === */
+
 #projects {
   width: 90%;
-  position: relative;
-  margin-top: 55%;
-  margin-left: 23%;
-  padding-bottom: 4.5%;
-  /*background: rgba(255,255,255,0.4);*/
-  opacity: 0;
+  border: 2px solid green;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 1;
   overflow: scroll;
 }
 
@@ -109,41 +124,41 @@ h3 {
   margin-top: 5%;
   display: inline-block;
   width: 80%;
- background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   position: relative;
 }
 
 .header-nav {
-  position:fixed;
+  position: fixed;
   top: 14%;
   opacity: 0;
   display: block;
   width: 16%;
 }
+
 .header-nav ul {
-    list-style: none;
-    padding-right: 1.3%;
-    margin-top: 0;
+  list-style: none;
+  padding-right: 1.3%;
+  margin-top: 0;
 }
 
 .header-nav li {
-    /*display: inline-block;*/
-    font-size: 2rem;
-    text-align: right;
-    margin-top: 2%;
-    /*margin-left: 4.6%;*/
-    letter-spacing: 0.2rem;
-    font-weight: 300;
-    color: #B0BCC0;
+  font-size: 2rem;
+  text-align: right;
+  margin-top: 2%;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  color: #B0BCC0;
 }
 
 
+/* === Contact === */
 
 #contact {
   width: 50%;
   width: 48%;
-  position:fixed;
+  position: fixed;
   top: 40%;
   padding-bottom: 3%;
   /*background: rgba(255,255,255,0.4);*/
@@ -151,10 +166,21 @@ h3 {
   overflow: scroll;
 }
 
-#breezeplease { background-image: url('../img/breezeplease.png'); }
-#chaustracks { background-image: url('../img/chaustracks.png'); }
-#etch-a-sketch { background-image: url('../img/etch-a-sketch.png'); }
-#business-responsive { background-image: url('../img/business-responsive.png'); }
+#breezeplease {
+  background-image: url('../img/breezeplease.png');
+}
+
+#chaustracks {
+  background-image: url('../img/chaustracks.png');
+}
+
+#etch-a-sketch {
+  background-image: url('../img/etch-a-sketch.png');
+}
+
+#business-responsive {
+  background-image: url('../img/business-responsive.png');
+}
 
 .project {
   background-size: 100% auto;
@@ -163,12 +189,12 @@ h3 {
   width: 95%;
   padding-bottom: 52%;
   margin: 0 auto;
-
 }
 
 .project-text {
-  background: rgba(255,255,255,0.7);
-  top: 0; left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  top: 0;
+  left: 0;
   width: 120%;
   height: 120%;
   padding: 1%;
@@ -182,11 +208,11 @@ h3 {
   margin: 0 auto;
   margin-top: 5%;
   width: 80%;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 #contact-form {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   width: 100%;
   padding: 10px;
   /*border-radius: 5px;*/
@@ -197,9 +223,7 @@ fieldset {
   border: none;
   padding: 0;
   margin: 0;
-
 }
-
 
 .form-textarea,
 .form-email {
@@ -208,15 +232,14 @@ fieldset {
   margin: 0 auto 10px;
   display: block;
   border: none;
-  background: rgba(255,255,255,0.2);
-
+  background: rgba(255, 255, 255, 0.2);
   font-weight: 400;
   font-size: 2rem;
 }
 
 .form-textarea:focus,
 .form-email:focus {
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.8);
   outline: none;
 }
 
@@ -251,7 +274,6 @@ fieldset {
   box-shadow: 0 0 20px red;
 }
 
-
 a {
   color: #B0BCC0;
   text-decoration: none;
@@ -265,13 +287,11 @@ a:active {
   position: relative;
   top: 5px;
   left: 5px;
-
 }
 
 .currentLink {
   color: #FB3827;
 }
-
 
 .dark {
   display: block;
@@ -282,24 +302,6 @@ a:active {
 }
 
 .dark:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
-
-
-
-.down-arrow {
-  position: absolute;
-  left: 50%;
-  top: 15.5%;
-  width: 5%;
-  height: 5%;
-}
-
-#down-arrow-bg {
-  opacity: 0;
-}
-
-#down-arrow-glow {
-  opacity: 0;
-}
