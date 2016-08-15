@@ -2,39 +2,56 @@ $(document).ready(function() {
   // Validate contact form
   $("#contact-form").validate();
   // Remove internal link hash from URL
-  if (window.location.hash === "projects" || window.location.hash === "contact-me") {
-    loadContent(window.location.hash);
-  }
+  // if (window.location.hash === "projects" || window.location.hash === "contact-me") {
+  //   loadContent(window.location.hash);
+  // }
 
   // Go to project website
-  $('.projects-container').click(function(e) {
-    window.location = $(this).children('div').children("a").attr("href");
+  // $('.projects-container').click(function(e) {
+  //   window.location = $(this).children('div').children("a").attr("href");
+  // })
+
+
+  $(window).scroll(function () {
+
+    $(window).scrollTop() < 100 ? growHeading() : shrinkHeading()
   })
 
-  // Switch
-    $('#switch').click(function() {
-      $('#main-blackout').toggleClass('main-bg-blackout');
-      if ($('#main-blackout').hasClass('main-bg-blackout')) {
-        TweenMax.to('#header-container', 0.5, { width: "18%" });
-        TweenMax.to('#header-name', 0.5, { fontSize: "2.5rem", letterSpacing: "0.3rem" });
-        TweenMax.to('#header-job-title', 0.5, { fontSize: "1.3rem", letterSpacing: "0rem", onStart: function() {
-            TweenMax.to('.header-nav', 1, { opacity: 1 });
-            // $('a[href="#projects"]').addClass('currentLink');
-          }
-        });
-        TweenMax.delayedCall(3, showProjects);
-      } else {
+
+
+  //Switch
+    //$('#switch').click(function() {
+      function shrinkHeading() {
+        $('#main-blackout').toggleClass('main-bg-blackout');
+        if ($('#main-blackout').hasClass('main-bg-blackout')) {
+          TweenMax.to('#header-container', 0.5, { width: "18%" });
+          TweenMax.to('#header-name', 0.5, { fontSize: "2.5rem", letterSpacing: "0.3rem" });
+          TweenMax.to('#header-job-title', 0.5, { fontSize: "1.3rem", letterSpacing: "0rem", onStart: function() {
+              TweenMax.to('.header-nav', 1, { opacity: 1 });
+              TweenMax.to('#contact', 1, { opacity: 1 });
+              // $('a[href="#projects"]').addClass('currentLink');
+            }
+          });
+        }
+      }
+
+      function growHeading() {
+
+
+        // TweenMax.delayedCall(3, showProjects);
+      // } else {
         TweenMax.to('#header-container', 0.5, { width: "48%" });
         TweenMax.to('#header-name', 0.5, { fontSize: "10rem" });
         TweenMax.to('#header-job-title', 0.5, {
           fontSize: "3.5rem",
           onStart: function() {
             TweenMax.to('.header-nav', 0.5, { opacity: 0 });
+            TweenMax.to('#contact', 0.5, { opacity: 0 });
           }
         });
-        TweenMax.delayedCall(3, hideProjects);
+        // TweenMax.delayedCall(3, hideProjects);
       }
-    })
+
 
 
     animate();
@@ -64,10 +81,3 @@ function fadeUp() {
 
 }
 
-function showProjects() {
-  console.log('showProjects');
-}
-
-function hideProjects() {
-  console.log('hideProjects');
-}

@@ -5,7 +5,7 @@
 *:after {
   box-sizing: border-box;
   margin: 0;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 
 html {
@@ -27,7 +27,6 @@ body {
   top: 0;
   left: 0;
   opacity: 0;
-  overflow: hidden;
 }
 
 .main-bg {
@@ -38,16 +37,16 @@ body {
   opacity: 1;
 }
 
-#main-bg-img {
+/*#main-bg-img {
   background: url('../img/bg.jpg') no-repeat;
   background-size: cover;
   opacity: 1;
 }
-
-#main-bg-cover {
+*/
+/*#main-bg-cover {
   background-color: black;
   opacity: 0.3;
-}
+}*/
 
 .main-bg-blackout {
   background-color: #000;
@@ -77,7 +76,7 @@ body {
   padding: 1%;
   left: 0;
   width: 48%;
-  position: absolute;
+  position: fixed;
   top: 4.5%;
   background: rgba(255, 255, 255, 0.1);
 }
@@ -108,22 +107,22 @@ body {
 /* === Projects === */
 
 #projects {
-  width: 90%;
-  border: 2px solid green;
-  position: absolute;
-  top: 0;
-  left: 0;
+  width: 70%;
+  /*border: 2px solid red;*/
+  position: relative;
+  top: 40%;
+  left: 30%;
   display: block;
   opacity: 1;
   overflow: scroll;
 }
 
 .projects-container {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   overflow: hidden;
   margin-top: 5%;
   display: inline-block;
-  width: 80%;
+  width: 90%;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   position: relative;
@@ -156,10 +155,11 @@ body {
 /* === Contact === */
 
 #contact {
-  width: 50%;
-  width: 48%;
+  width: 16%;
   position: fixed;
-  top: 40%;
+  top: 24%;
+  left: 1%;
+  display: block;
   padding-bottom: 3%;
   /*background: rgba(255,255,255,0.4);*/
   opacity: 0;
@@ -212,9 +212,8 @@ body {
 }
 
 #contact-form {
-  background: rgba(255, 255, 255, 0.2);
-  width: 100%;
-  padding: 10px;
+  /*background: rgba(255, 255, 255, 0.2);*/
+  /*padding: 10px;*/
   /*border-radius: 5px;*/
   /*margin: 0 auto;*/
 }
@@ -233,7 +232,7 @@ fieldset {
   display: block;
   border: none;
   background: rgba(255, 255, 255, 0.2);
-  font-weight: 400;
+  font-weight: 300;
   font-size: 2rem;
 }
 
@@ -244,10 +243,10 @@ fieldset {
 }
 
 .form-submit {
-  padding: 8px 30px;
+  padding: 5px 20px;
   border: 3px solid #333;
   background: white;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   float: right;
   outline: none;
   cursor: pointer;
