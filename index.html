@@ -39,8 +39,7 @@
   <div id="main-container">
 
   <div id="main-bg-img" class="main-bg"></div>
-<!--   <div id="main-bg-cover" class="main-bg"></div> -->
-  <div id="main-blackout" class="main-bg"></div>
+
 
     <div id="header-container">
       <h1 id="header-name">adrian<span>kelly</span></h1>
@@ -50,9 +49,9 @@
      <nav class="header-nav">
         <ul>
 <!--           <li><a class="nav-links" href="#projects">projects</a></li> -->
-<!--           <li><a class="nav-links" id="contact-link" href="#contact">contact</a></li> -->
+          <li><a class="nav-links" id="contact-link" href="#contact">contact</a></li>
           <li><a class="nav-links" href="https://github.com/adriankelly">github</a></li>
-          <li><a class="nav-links" href="https://github.com/adriankelly">linked-in</a></li>
+          <li><a class="nav-links" href="https://www.linkedin.com/in/adriankellyweb">linkedin</a></li>
         </ul>
       </nav>
 
@@ -62,6 +61,7 @@
         <div id="breezeplease" class="project"></div>
         <div class="project-text dark">
         <a href="http://www.breezeplease.com"><p>breezeplease.com</p></a>
+        <br/>
           <p>AngularJS app that fetches current wind speed anywhere in the world</p>
           <ul>
             <li>Built within the AngularJS framework employing custom filters, directives, services</li>
@@ -80,6 +80,7 @@
         <div class="project-text dark">
 
             <a href="http://www.chaustracks.com"><p>chaustracks.com</p></a>
+            <br/>
             <p>Music blog featuring curated list of tracks</p>
             <ul>
               <li>Uses PHP throughout, with WordPress as the CMS for easy updating of content by authors</li>
@@ -96,7 +97,7 @@
         <div id="etch-a-sketch" class="project"></div>
         <div class="project-text dark">
         <a href="https://adriankelly.github.io/etch-a-sketch/"><p>Etch-a-Sketch</p></a>
-
+          <br/>
           <p>Creation of an Etch-a-Sketch canvas using JavaScript and jQuery. Project idea sourced from The Odin Project - a web development training website</p>
           <ul>
             <li>Etch-a-Sketch canvas entirely generated with JavaScript and jQuery</li>
@@ -110,7 +111,7 @@
         <div id="business-responsive" class="project"></div>
         <div class="project-text dark">
           <a href="https://adriankelly.github.io/business-theme/"><p>Business themed responsive single-page website</p></a>
-
+          <br/>
           <ul>
             <li>Built from a Photoshop design of the site's layout on a desktop computer, with relevant images being sliced from this design</li>
             <li>Without the ability to rely upon designs for the site on handheld devices, responsive layout changes were dicated by the appearance of the site at particular widths</li>
@@ -129,8 +130,10 @@
         </div>
       </div>
     </div>
+  <div id="main-bg-cover"></div>
     <div id="contact">
       <div id="contact-container">
+        <div id="contact-close">&#215;</div>
         <form id="contact-form" action="http://formspree.io/hello@adriankelly.net" method="post">
           <fieldset>
             <textarea type="text" rows="8" name="name" id="msg-input" class="form-textarea" placeholder="Your Message" required></textarea>

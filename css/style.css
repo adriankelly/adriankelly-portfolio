@@ -37,19 +37,19 @@ body {
   opacity: 1;
 }
 
-/*#main-bg-img {
-  background: url('../img/bg.jpg') no-repeat;
-  background-size: cover;
-  opacity: 1;
+#main-bg-cover {
+  display: none;
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
-*/
-/*#main-bg-cover {
-  background-color: black;
-  opacity: 0.3;
-}*/
 
-.main-bg-blackout {
-  background-color: #000;
+#main-bg-img {
+  position: fixed;
+  background: url('../img/bg.jpg') no-repeat;
+  background-size: 100% 100%;
   opacity: 1;
 }
 
@@ -78,13 +78,13 @@ body {
   width: 48%;
   position: fixed;
   top: 4.5%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(198, 207, 209, 0.2);
 }
 
 #header-name {
   font-size: 10rem;
   letter-spacing: 0.5rem;
-  color: #FFF;
+  color: #000;
   margin-bottom: 0;
   margin-top: 1%
 }
@@ -107,14 +107,19 @@ body {
 /* === Projects === */
 
 #projects {
-  width: 70%;
+  width: 60%;
   /*border: 2px solid red;*/
   position: relative;
   top: 40%;
-  left: 30%;
+  left: 40%;
   display: block;
   opacity: 1;
   overflow: scroll;
+  cursor: pointer;
+}
+
+#projects a {
+  color: black;
 }
 
 .projects-container {
@@ -123,47 +128,61 @@ body {
   margin-top: 5%;
   display: inline-block;
   width: 90%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   cursor: pointer;
   position: relative;
 }
 
 .header-nav {
   position: fixed;
-  top: 14%;
+  top: 20%;
   opacity: 0;
   display: block;
-  width: 16%;
+  width: 25%;
 }
 
 .header-nav ul {
   list-style: none;
   padding-right: 1.3%;
   margin-top: 0;
+
 }
 
 .header-nav li {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: right;
   margin-top: 2%;
   letter-spacing: 0.2rem;
   font-weight: 300;
-  color: #B0BCC0;
 }
 
+.header-nav a {
+  color: #000;
+  text-decoration: none;
+}
 
 /* === Contact === */
 
 #contact {
-  width: 16%;
+  width: 50%;
   position: fixed;
-  top: 24%;
-  left: 1%;
+  bottom: 10%;
+  left: 25%;
   display: block;
-  padding-bottom: 3%;
-  /*background: rgba(255,255,255,0.4);*/
+  padding: 2%;
+  background: rgba(255,255,255,0.3);
   opacity: 0;
   overflow: scroll;
+}
+
+#contact-close {
+  right: 1%;
+  top: -3%;
+  position: absolute;
+  color: white;
+  font-size: 4rem;
+  font-weight: 100;
+  cursor: pointer;
 }
 
 #breezeplease {
@@ -189,6 +208,7 @@ body {
   width: 95%;
   padding-bottom: 52%;
   margin: 0 auto;
+
 }
 
 .project-text {
@@ -198,7 +218,7 @@ body {
   width: 120%;
   height: 120%;
   padding: 1%;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   position: absolute;
   opacity: 0;
   color: #333;
@@ -231,30 +251,35 @@ fieldset {
   margin: 0 auto 10px;
   display: block;
   border: none;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(198, 207, 209, 0.6);
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
+
+::-webkit-input-placeholder { color: #FFF; }
+:-moz-placeholder { color: #FFF; }
+::-moz-placeholder { color: #FFF; }
+:-ms-input-placeholder { color: #FFF; }
 
 .form-textarea:focus,
 .form-email:focus {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.6);
   outline: none;
 }
 
 .form-submit {
-  padding: 5px 20px;
-  border: 3px solid #333;
-  background: white;
-  font-size: 1.5rem;
+  padding: 5px 40px;
+  border: 3px solid rgba(198, 207, 209, 0.6);
+  background: rgba(198, 207, 209, 0.6);
+  font-size: 2.5rem;
   float: right;
   outline: none;
   cursor: pointer;
 }
 
 .form-submit:hover {
-  background-color: #F3B28C;
-  border: 3px solid #14c8ff;
+  background-color: white;
+  /*border: 3px solid white;*/
 }
 
 #contact-form label.error {
@@ -272,11 +297,11 @@ fieldset {
   border-color: red;
   box-shadow: 0 0 20px red;
 }
-
+/*
 a {
   color: #B0BCC0;
   text-decoration: none;
-}
+}*/
 
 a:hover {
   color: #FB3827;
@@ -298,7 +323,9 @@ a:active {
   width: 100%;
   transition: all 0.3s linear;
   opacity: 0;
+  cursor: pointer;
 }
+
 
 .dark:hover {
   opacity: 0.9;
