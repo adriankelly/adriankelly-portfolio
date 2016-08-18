@@ -48,7 +48,7 @@ body {
 
 #main-bg-img {
   position: fixed;
-  background: url('../img/bg.jpg') no-repeat;
+  background: url('../img/bg2.jpg') no-repeat;
   background-size: 100% 100%;
   opacity: 1;
 }
@@ -78,13 +78,13 @@ body {
   width: 48%;
   position: fixed;
   top: 4.5%;
-  background: rgba(198, 207, 209, 0.2);
+/*  background: rgba(198, 207, 209, 0.2);*/
 }
 
 #header-name {
   font-size: 10rem;
   letter-spacing: 0.5rem;
-  color: #000;
+  color: #3A4957;
   margin-bottom: 0;
   margin-top: 1%
 }
@@ -100,7 +100,7 @@ body {
   margin-right: 7%;
   letter-spacing: 0.6rem;
   font-size: 3.5rem;
-  color: #B0BCC0;
+  color: #4597D5;
 }
 
 
@@ -138,7 +138,7 @@ body {
   top: 20%;
   opacity: 0;
   display: block;
-  width: 25%;
+  width: 22.8%;
 }
 
 .header-nav ul {
@@ -153,11 +153,12 @@ body {
   text-align: right;
   margin-top: 2%;
   letter-spacing: 0.2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .header-nav a {
-  color: #000;
+  color: #3A4957;
+  padding: 1%;
   text-decoration: none;
 }
 
@@ -304,18 +305,10 @@ a {
 }*/
 
 a:hover {
-  color: #FB3827;
+  background-color: #4597D5;
+  color: white;
 }
 
-a:active {
-  position: relative;
-  top: 5px;
-  left: 5px;
-}
-
-.currentLink {
-  color: #FB3827;
-}
 
 .dark {
   display: block;
