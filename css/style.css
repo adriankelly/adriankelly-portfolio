@@ -48,8 +48,9 @@ body {
 
 #main-bg-img {
   position: fixed;
-  background: url('../img/bg2.jpg') no-repeat;
-  background-size: 100% 100%;
+  background-image: url('../img/bg2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 1;
 }
 
@@ -73,12 +74,10 @@ body {
 
 #header-container {
   text-align: right;
-  padding: 1%;
   left: 0;
-  width: 48%;
+  width: 40%;
   position: fixed;
   top: 4.5%;
-/*  background: rgba(198, 207, 209, 0.2);*/
 }
 
 #header-name {
@@ -86,7 +85,8 @@ body {
   letter-spacing: 0.5rem;
   color: #3A4957;
   margin-bottom: 0;
-  margin-top: 1%
+  margin-top: 1%;
+  padding-left: 2%;
 }
 
 #header-name span {
@@ -97,7 +97,7 @@ body {
 
 #header-job-title {
   text-transform: uppercase;
-  margin-right: 7%;
+  margin-right: 7.8%;
   letter-spacing: 0.6rem;
   font-size: 3.5rem;
   color: #4597D5;
@@ -106,11 +106,23 @@ body {
 
 /* === Projects === */
 
+#header-projects-container {
+  width: 90%;
+  position: relative;
+}
+
+#header-projects {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.6rem;
+  font-size: 2rem;
+  color: #4597D5;
+}
+
 #projects {
   width: 60%;
-  /*border: 2px solid red;*/
   position: relative;
-  top: 40%;
+  top: 70%;
   left: 40%;
   display: block;
   opacity: 1;
@@ -138,7 +150,7 @@ body {
   top: 20%;
   opacity: 0;
   display: block;
-  width: 22.8%;
+  width: 23.7%;
 }
 
 .header-nav ul {
@@ -209,7 +221,6 @@ body {
   width: 95%;
   padding-bottom: 52%;
   margin: 0 auto;
-
 }
 
 .project-text {
@@ -279,7 +290,8 @@ fieldset {
 }
 
 .form-submit:hover {
-  background-color: white;
+  background-color: #4597D5;
+  color: white;
   /*border: 3px solid white;*/
 }
 

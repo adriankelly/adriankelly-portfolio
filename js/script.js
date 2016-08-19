@@ -26,9 +26,9 @@ $(document).ready(function() {
         // if ($('#main-blackout').hasClass('main-bg-blackout')) {
           TweenMax.to('#header-container', 0.5, { width: "25%" });
           TweenMax.to('#header-name', 0.5, { fontSize: "3.5rem", letterSpacing: "0.3rem" });
-          TweenMax.to('#header-job-title', 0.5, { fontSize: "3.3rem", letterSpacing: "0rem", onStart: function() {
+          TweenMax.to('#header-job-title', 0.5, { fontSize: "3rem", letterSpacing: "0rem", paddingLeft: "10%", onStart: function() {
               TweenMax.to('.header-nav', 1, { opacity: 1 });
-              // TweenMax.to('#contact', 1, { opacity: 1 });
+              TweenMax.to('#header-projects', 1, { opacity: 0 });
               // $('a[href="#projects"]').addClass('currentLink');
             }
           });
@@ -40,13 +40,13 @@ $(document).ready(function() {
 
         // TweenMax.delayedCall(3, showProjects);
       // } else {
-        TweenMax.to('#header-container', 0.5, { width: "48%" });
+        TweenMax.to('#header-container', 0.5, { width: "40%" });
         TweenMax.to('#header-name', 0.5, { fontSize: "10rem" });
         TweenMax.to('#header-job-title', 0.5, {
           fontSize: "3.5rem",
           onStart: function() {
             TweenMax.to('.header-nav', 0.5, { opacity: 0 });
-            // TweenMax.to('#contact', 0.5, { opacity: 0 });
+            TweenMax.to('#header-projects', 1, { opacity: 1 });
           }
         });
         // TweenMax.delayedCall(3, hideProjects);
