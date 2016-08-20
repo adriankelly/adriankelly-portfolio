@@ -3,7 +3,7 @@ $(document).ready(function() {
   $("#contact-form").validate();
 
   $(window).scroll(function () {
-    $(window).scrollTop() < 75 ? growHeading() : shrinkHeading()
+    $(window).scrollTop() < 125 ? growHeading() : shrinkHeading()
   })
 
   function shrinkHeading() {
@@ -11,8 +11,8 @@ $(document).ready(function() {
     TweenMax.to('#header-name', 0.5, { fontSize: "3.5rem", letterSpacing: "0.3rem" });
     TweenMax.to('#header-job-title', 0.5, { fontSize: "3rem", letterSpacing: "0rem", paddingLeft: "10%", onStart: function() {
         TweenMax.to('.header-nav', 1, { opacity: 1 });
-        TweenMax.to('#header-projects', 0.5, { opacity: 0 });
-        TweenMax.to('.projects-container', 1, { opacity: 1 });
+        TweenMax.to('#header-projects', 1, { opacity: 0 });
+        TweenMax.to('.project-wrap', 2, { opacity: 1 });
       }
     });
   }
@@ -24,8 +24,8 @@ $(document).ready(function() {
       fontSize: "3.5rem",
       onStart: function() {
         TweenMax.to('.header-nav', 0.5, { opacity: 0 });
-        TweenMax.to('#header-projects', 0.5, { opacity: 1 });
-        TweenMax.to('.projects-container', 0.5, { opacity: 0.2 });
+        TweenMax.to('#header-projects', 1, { opacity: 1 });
+        TweenMax.to('.project-wrap', 1, { opacity: 0 });
       }
     });
   }
