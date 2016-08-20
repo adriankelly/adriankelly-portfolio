@@ -71,8 +71,8 @@ body {
 
 #header-container {
   text-align: right;
-  left: 0;
   width: 40%;
+  margin-left: 3%;
   position: fixed;
   top: 15%;
 }
@@ -155,7 +155,7 @@ body {
   top: 30%;
   opacity: 0;
   display: block;
-  width: 23.7%;
+  width: 26.6%;
 }
 
 .header-nav ul {

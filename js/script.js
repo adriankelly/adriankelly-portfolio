@@ -11,7 +11,7 @@ $(document).ready(function() {
     TweenMax.to('#header-name', 0.5, { fontSize: "3.5rem", letterSpacing: "0.3rem" });
     TweenMax.to('#header-job-title', 0.5, { fontSize: "3rem", letterSpacing: "0rem", paddingLeft: "10%", onStart: function() {
         TweenMax.to('.header-nav', 1, { opacity: 1 });
-        TweenMax.to('#header-projects', 1, { opacity: 0 });
+        TweenMax.to('#header-projects', 0.5, { opacity: 0 });
         TweenMax.to('.project-wrap', 2, { opacity: 1 });
       }
     });
@@ -58,7 +58,7 @@ function fadeUp() {
     ease: Quad.easeOut
   }, 0.2);
   tl.to('#header-container', 0.75, { opacity: 1, left: 0, ease: Quad.easeOut }, 0.5);
-
+  tl.to('#header-projects', 0.75, {scale: 1.05, yoyo: true, repeat: -1}, 0.5);
   return tl;
 }
 
