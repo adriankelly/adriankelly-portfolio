@@ -1,11 +1,8 @@
-/* === Global === */
-
 *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
-  /*border: 1px solid green;*/
 }
 
 html {
@@ -18,7 +15,6 @@ body {
   font-size: 1.6rem;
   margin: 0;
 }
-
 
 #main-container {
   position: absolute;
@@ -39,7 +35,7 @@ body {
 
 #main-bg-cover {
   display: none;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   width: 100%;
@@ -60,9 +56,11 @@ body {
   left: 50%;
   cursor: pointer;
 }
+
 .front-btn {
   fill: #ff8800;
 }
+
 #back-btn {
   fill: transparent;
   stroke: #ff8800;
@@ -70,14 +68,13 @@ body {
 
 
 
-/* === Header === */
 
 #header-container {
   text-align: right;
   left: 0;
   width: 40%;
   position: fixed;
-  top: 4.5%;
+  top: 15%;
 }
 
 #header-name {
@@ -104,7 +101,7 @@ body {
 }
 
 
-/* === Projects === */
+
 
 #header-projects-container {
   width: 90%;
@@ -115,22 +112,22 @@ body {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.6rem;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #4597D5;
 }
 
-#projects {
+#projects-container {
   width: 60%;
   position: relative;
   top: 70%;
-  left: 40%;
+  margin-left: 35%;
   display: block;
   opacity: 1;
   overflow: scroll;
   cursor: pointer;
 }
 
-#projects a {
+#projects-container a {
   color: black;
 }
 
@@ -143,11 +140,13 @@ body {
   background: rgba(0, 0, 0, 0.3);
   cursor: pointer;
   position: relative;
+  opacity: 0.2;
+  border: 2px solid green;
 }
 
 .header-nav {
   position: fixed;
-  top: 20%;
+  top: 30%;
   opacity: 0;
   display: block;
   width: 23.7%;
@@ -157,7 +156,6 @@ body {
   list-style: none;
   padding-right: 1.3%;
   margin-top: 0;
-
 }
 
 .header-nav li {
@@ -174,16 +172,19 @@ body {
   text-decoration: none;
 }
 
-/* === Contact === */
+.header-nav a:hover {
+  background-color: #4597D5;
+  color: white;
+}
 
 #contact {
   width: 50%;
   position: fixed;
   bottom: 10%;
   left: 25%;
-  display: block;
+  display: none;
   padding: 2%;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
   opacity: 0;
   overflow: scroll;
 }
@@ -198,30 +199,52 @@ body {
   cursor: pointer;
 }
 
-#breezeplease {
-  background-image: url('../img/breezeplease.png');
+
+.project-wrap {
+  width: 100%;
+  padding-bottom: 25%;
+  position: relative;
+  overflow: hidden;
 }
 
-#chaustracks {
-  background-image: url('../img/chaustracks.png');
+.project-img-box {
+  position: relative;
+  display: block;
+  background: #f5f5f5;
+  width: 200px;
+  height: 200px;
 }
 
-#etch-a-sketch {
-  background-image: url('../img/etch-a-sketch.png');
+.overlay-box {
+  display: none;
+  background: #424242;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+
 }
 
-#business-responsive {
-  background-image: url('../img/business-responsive.png');
+.overlay-infos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  text-align: center;
 }
 
-.project {
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 95%;
-  padding-bottom: 52%;
-  margin: 0 auto;
+.project-wrap:hover .overlay-box {
+  display: block;
 }
+
 
 .project-text {
   background: rgba(255, 255, 255, 0.7);
@@ -243,12 +266,6 @@ body {
   background: rgba(255, 255, 255, 0.2);
 }
 
-#contact-form {
-  /*background: rgba(255, 255, 255, 0.2);*/
-  /*padding: 10px;*/
-  /*border-radius: 5px;*/
-  /*margin: 0 auto;*/
-}
 
 fieldset {
   border: none;
@@ -268,10 +285,21 @@ fieldset {
   font-size: 2.5rem;
 }
 
-::-webkit-input-placeholder { color: #FFF; }
-:-moz-placeholder { color: #FFF; }
-::-moz-placeholder { color: #FFF; }
-:-ms-input-placeholder { color: #FFF; }
+::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+:-moz-placeholder {
+  color: #FFF;
+}
+
+::-moz-placeholder {
+  color: #FFF;
+}
+
+:-ms-input-placeholder {
+  color: #FFF;
+}
 
 .form-textarea:focus,
 .form-email:focus {
@@ -289,12 +317,6 @@ fieldset {
   cursor: pointer;
 }
 
-.form-submit:hover {
-  background-color: #4597D5;
-  color: white;
-  /*border: 3px solid white;*/
-}
-
 #contact-form label.error {
   display: block;
   width: 100%;
@@ -310,29 +332,3 @@ fieldset {
   border-color: red;
   box-shadow: 0 0 20px red;
 }
-/*
-a {
-  color: #B0BCC0;
-  text-decoration: none;
-}*/
-
-a:hover {
-  background-color: #4597D5;
-  color: white;
-}
-
-
-.dark {
-  display: block;
-  background: #B0BCC0;
-  width: 100%;
-  transition: all 0.3s linear;
-  opacity: 0;
-  cursor: pointer;
-}
-
-
-.dark:hover {
-  opacity: 0.9;
-}
-
