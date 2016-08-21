@@ -8,6 +8,10 @@
   -o-box-sizing: border-box;
 }
 
+html {
+  overflow: hidden;
+}
+
 #container {
   position: relative;
   overflow: hidden;
