@@ -7,27 +7,64 @@ $(document).ready(function() {
   })
 
   function shrinkHeading() {
-    TweenMax.to('#header-container', 0.5, { width: "25%" });
-    TweenMax.to('#header-name', 0.5, { fontSize: "3.5rem", letterSpacing: "0.3rem" });
-    TweenMax.to('#header-job-title', 0.5, { fontSize: "3rem", letterSpacing: "0rem", paddingLeft: "10%", onStart: function() {
+    if ( $(window).width() > 995) {
+
+      TweenMax.to('#header-container', 0.5, { width: "25%" });
+      TweenMax.to('#header-name', 0.5, { fontSize: "3.5rem", letterSpacing: "0.3rem" });
+      TweenMax.to('#header-job-title', 0.5, { fontSize: "3rem", letterSpacing: "0rem", paddingLeft: "7%", onStart: function() {
+          TweenMax.to('.header-nav', 1, { opacity: 1 });
+          TweenMax.to('#header-projects', 0.5, { opacity: 0 });
+          TweenMax.to('.project-wrap', 2, { opacity: 1 });
+        }
+      });
+    }
+    else if (( $(window).width() > 500)) {
+      TweenMax.to('#header-container', 0.5, { width: "30%" });
+      TweenMax.to('#header-name', 0.5, { fontSize: "3.5rem"});
+      TweenMax.to('#header-job-title', 0.5, { fontSize: "1.3rem",paddingRight: "5%", onStart: function() {
         TweenMax.to('.header-nav', 1, { opacity: 1 });
         TweenMax.to('#header-projects', 0.5, { opacity: 0 });
         TweenMax.to('.project-wrap', 2, { opacity: 1 });
-      }
-    });
+        TweenMax.to('.overlay-infos', 0.1, { opacity: 1 });
+        }
+      });
+    }
+    else {
+      TweenMax.to('#header-projects', 0.5, { opacity: 0 });
+      TweenMax.to('.project-wrap', 1, { opacity: 1 });
+    }
   }
 
+
+
   function growHeading() {
-    TweenMax.to('#header-container', 0.5, { width: "40%" });
-    TweenMax.to('#header-name', 0.5, { fontSize: "10rem" });
-    TweenMax.to('#header-job-title', 0.5, {
-      fontSize: "3.5rem",
-      onStart: function() {
-        TweenMax.to('.header-nav', 0.5, { opacity: 0 });
-        TweenMax.to('#header-projects', 1, { opacity: 1 });
-        TweenMax.to('.project-wrap', 1, { opacity: 0 });
-      }
-    });
+    if ( $(window).width() > 995) {
+      TweenMax.to('#header-container', 0.5, { width: "45%" });
+      TweenMax.to('#header-name', 0.5, { fontSize: "10rem" });
+      TweenMax.to('#header-job-title', 0.5, {
+        fontSize: "3.5rem",
+        onStart: function() {
+          TweenMax.to('.header-nav', 0.5, { opacity: 0 });
+          TweenMax.to('#header-projects', 1, { opacity: 1 });
+          TweenMax.to('.project-wrap', 1, { opacity: 0 });
+        }
+      });
+    }
+    else if (( $(window).width() > 500)) {
+      TweenMax.to('#header-container', 0.5, { width: "60%" });
+      TweenMax.to('#header-name', 0.5, { fontSize: "8rem"});
+      TweenMax.to('#header-job-title', 0.5, { fontSize: "2.5rem", paddingRight: "7%", onStart: function() {
+          TweenMax.to('.header-nav', 1, { opacity: 0 });
+          TweenMax.to('#header-projects', 0.5, { opacity: 1 });
+          TweenMax.to('.project-wrap', 1, { opacity: 0 });
+          TweenMax.to('.overlay-infos', 1, { opacity: 0 });
+        }
+      });
+    }
+    else {
+      TweenMax.to('#header-projects', 0.5, { opacity: 1 });
+      TweenMax.to('.project-wrap', 1, { opacity: 0 });
+    }
   }
 
 
