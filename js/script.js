@@ -30,12 +30,24 @@ $(document).ready(function() {
     });
   }
 
+
+  $('.digital-display-work').on('click', function() {
+    TweenMax.to('#display-work-bg-cover', 0.1, { display: 'block' });
+    $('#digital-display-target').append('<iframe id="digital-display-iframe" src="./display-work/mazda_970x250/index.html">Not supported</iframe>');
+    TweenMax.to('#digital-display-iframe', 0.1, { display: 'block' });
+  })
+
+ $('#display-work-bg-cover').on('click', function() {
+    TweenMax.to('#display-work-bg-cover', 0.1, { display: 'none' });
+    $('#digital-display-iframe').remove();
+  })
+
   $('#contact-link').on('click', function() {
     TweenMax.to('#contact', 0.4, { opacity: 1, display: 'block' });
     TweenMax.to('#main-bg-cover', 0.1, { display: 'block' });
   })
 
-  $('#main-bg-cover, #contact-close').on('click', function() {
+  $('#contact-bg-cover, #contact-close').on('click', function() {
     TweenMax.to('#contact', 0.4, { opacity: 0, display: 'none' });
     TweenMax.to('#main-bg-cover', 0.1, { display: 'none' });
   })

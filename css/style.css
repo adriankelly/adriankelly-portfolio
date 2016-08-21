@@ -33,7 +33,8 @@ body {
   opacity: 1;
 }
 
-#main-bg-cover {
+#contact-bg-cover,
+#display-work-bg-cover {
   display: none;
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
@@ -42,6 +43,9 @@ body {
   height: 100%;
 }
 
+.digital-display-work {
+  width: 100%;
+}
 #main-bg-img {
   position: fixed;
   background-image: url('../img/bg2.jpg');
@@ -256,6 +260,21 @@ body {
   font-weight: 100;
   -webkit-transition: opacity 0.5s; /* Safari */
   transition: opacity 0.5s;
+}
+
+
+#digital-display-iframe {
+  width: 970px;
+  height: 250px;
+  position: relative;
+  margin: 0 auto;
+  border: none;
+  display: none;
+}
+
+#digital-display-target {
+  position: absolute;
+  width: 100%;
 }
 
 #projects-container a {
