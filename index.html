@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Adrian Kelly | Web Developer</title>
   <link href="https://fonts.googleapis.com/css?family=Cousine|Josefin+Sans:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -35,13 +34,13 @@
   <!-- End Google Tag Manager -->
 
   <div id="main-container">
-    <div id="main-bg-img" class="main-bg"></div>
+    <div id="main-bg-img"></div>
 
     <div id="header-container">
       <h1 id="header-name">adrian<span>kelly</span></h1>
       <h2 id="header-job-title">web developer</h2>
     </div>
-    <nav class="header-nav">
+    <nav id="header-nav-container">
       <ul>
         <li><a class="nav-links" id="contact-link" href="#contact">contact ></a></li>
         <li><a class="nav-links" href="https://github.com/adriankelly">github ></a></li>
@@ -52,16 +51,10 @@
 
     <div id="projects-container">
 
-      <div id="header-projects-container">
-        <h2 id="header-projects">scroll to projects  &#x25BE;</h2>
-      </div>
-
       <div class="project-wrap">
-        <div class="project-img-box">
-          <a href="#" class="project-image"><img src="./img/breezeplease.jpg"></a>
+        <div class="project-link-wrap">
+          <a href="http://www.breezeplease.com" class="project-image"><img src="./img/breezeplease.jpg"></a>
         </div>
-        <div class="overlay-box"></div>
-        <div class="overlay-infos">
           <h2 class="project-name"><a href="http://www.breezeplease.com">breezeplease</a></h2>
           <div class="project-info">
           <a href="http://www.breezeplease.com">
@@ -75,12 +68,12 @@
             </ul>
             </a>
           </div>
-        </div>
+
       </div>
 
       <div class="project-wrap">
-        <div class="project-img-box">
-          <a href="#" class="project-image"><img src="./img/chaustracks.jpg"></a>
+        <div class="project-link-wrap">
+          <a href="http://www.chaustracks.com" class="project-image"><img src="./img/chaustracks.jpg"></a>
         </div>
         <div class="overlay-box"></div>
         <div class="overlay-infos">
@@ -100,8 +93,8 @@
       </div>
 
       <div class="project-wrap">
-        <div class="project-img-box">
-          <a href="#" class="project-image"><img src="./img/etch-a-sketch.jpg"></a>
+        <div class="project-link-wrap">
+          <a href="https://adriankelly.github.io/etch-a-sketch/" class="project-image"><img src="./img/etch-a-sketch.jpg"></a>
         </div>
         <div class="overlay-box"></div>
         <div class="overlay-infos">
@@ -120,8 +113,8 @@
       </div>
 
       <div class="project-wrap">
-        <div class="project-img-box">
-          <a href="#" class="project-image"><img src="./img/business-responsive.jpg"></a>
+        <div class="project-link-wrap">
+          <a href="https://adriankelly.github.io/business-theme/" class="project-image"><img src="./img/business-responsive.jpg"></a>
         </div>
         <div class="overlay-box"></div>
         <div class="overlay-infos">
@@ -131,9 +124,6 @@
             <ul>
               <li>Built from a Photoshop design of the site's layout on a desktop computer, with relevant images being sliced from this design</li>
               <li>Without the ability to rely upon designs for the site on handheld devices, responsive layout changes were dicated by the appearance of the site at particular widths</li>
-              <p>&nbsp;<p>
-              <p>&nbsp;<p>
-              <p>&nbsp;<p>
             </ul>
           </a>
           </div>
@@ -142,13 +132,13 @@
 
       <div class="project-wrap">
         <h2 id="display-work-heading">digital display creatives</h2>
-        <div id="mazda_970x250" class="project-img-box">
+        <div id="mazda_970x250" class="project-link-wrap">
           <div class="project-image"><img class="display-project-img" src="./display-work/mazda_970x250.jpg"></div>
           <div class="display-project-overlay">Mazda CX-3 970x250</div>
         </div>
       </div>
 
-    </div> <!-- end of projects-container -->
+    </div>  <!-- end of projects-container -->
 
     <div id="contact">
       <div id="contact-container">
@@ -169,6 +159,7 @@
       <div id="digital-display-target">
         <div id="display-work-close">&#215;</div>
       </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
