@@ -43,16 +43,16 @@ html {
 #header-container {
   text-align: left;
   width: 100%;
-  margin-left: 0;
+  padding-left: 2.6%;
   position: fixed;
-  top: 15%;
+  top: 5%;
   overflow: hidden;
   z-index: 5000;
-  background-color: rgba(58, 73, 87, 0.5);
+
 }
 
 #header-name {
-  font-size: 3rem;
+  font-size: 2.2rem;
   letter-spacing: 0.5rem;
   color: #3A4957;
   margin-bottom: 0;
@@ -63,16 +63,19 @@ html {
 #header-name span {
   letter-spacing: 0.5rem;
   font-weight: 400;
-  margin-left: 3.5%;
+
+  display: block;
 }
 
 #header-job-title {
+  margin-top: 3%;
   text-transform: uppercase;
-  margin-left: 3%;
-  letter-spacing: 0.6rem;
-  font-size: 1.2rem;
+  padding-left: 2%;
+  letter-spacing: 0rem;
+  font-size: 0.8rem;
   color: #FAEBD7;
 }
+
 
 .header-nav {
   position: fixed;
@@ -81,7 +84,6 @@ html {
   display: block;
   width: 100%;
   overflow: hidden;
-  background-color: rgba(58, 73, 87, 0.5);
   z-index: 4000;
 }
 
@@ -91,7 +93,7 @@ html {
 }
 
 .header-nav li {
-  display: inline-block;
+  display: block;
   text-align: left;
   margin-left: 1%;
   margin-top: 2%;
@@ -101,6 +103,7 @@ html {
 
 .header-nav a {
   color: #3A4957;
+  display: inline-block;
   padding: 0;
   font-size: 1.2rem;
   text-decoration: none;
@@ -117,7 +120,7 @@ html {
   text-align: center;
   position: relative;
   top: 50%;
-  margin: 0 auto;
+  margin-left: 35%;
   display: block;
   opacity: 1;
   overflow: scroll;
@@ -305,7 +308,7 @@ html {
   top: -3%;
   position: absolute;
   color: #FAEBD7;
-  font-size: 4rem;
+  font-size: 1.5rem;
   font-weight: 100;
   cursor: pointer;
 }
@@ -325,7 +328,7 @@ fieldset {
   border: none;
   background: rgba(198, 207, 209, 0.6);
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-family: 'Cousine', monospace;
 }
 
@@ -355,7 +358,7 @@ fieldset {
   padding: 5px 40px;
   border: 1px solid rgb(58, 73, 87);
   background: rgba(198, 207, 209, 0.6);
-  font-size: 2rem;
+  font-size: 1rem;
   float: right;
   outline: none;
   cursor: pointer;
@@ -389,11 +392,11 @@ fieldset {
 
 @media only screen and (min-width: 500px) {
 
+
 #header-container {
   width: 60%;
   text-align: right;
-  margin-left: 1%;
-  background-color: transparent;
+
 }
 #header-name {
   font-size: 8rem;
@@ -401,6 +404,7 @@ fieldset {
 
 #header-name span {
   margin-left: 3.5%;
+  display: inline-block;
 }
 
 #header-job-title {
@@ -408,6 +412,15 @@ fieldset {
   padding-right: 7%;
   width: 95%;
   text-align: right;
+}
+
+.header-nav {
+  margin-left: 2.5%;
+}
+
+.header-nav a {
+  font-size: 3rem;
+  display: inline-block;
 }
 
 #projects-container {
@@ -420,30 +433,6 @@ fieldset {
   margin-left: 10%;
 }
 
-.header-nav {
-  position: fixed;
-  top: 30%;
-  opacity: 0;
-  display: block;
-  width: 26.6%;
-  margin-top: 3%;
-  background-color: transparent;
-}
-
-.header-nav ul {
-  padding-right: 2.6%;
-}
-
-.header-nav a {
-  font-size: 3rem;
-  display: inline-block;
-}
-
-.header-nav li {
-  display: block;
-  text-align: right;
-  top: 20%;
-}
 
 
 .overlay-infos p,
@@ -458,6 +447,21 @@ fieldset {
 }
 
 
+
+.form-textarea,
+.form-email {
+  font-size: 1.8rem;
+}
+
+#contact-close {
+  font-size: 4rem;
+}
+
+.form-submit {
+  font-size: 2rem;
+}
+
+
 } /* END OF 500px MEDIA QUERY */
 
 
@@ -465,8 +469,10 @@ fieldset {
 
 @media only screen and (min-width: 995px) {
 
+
 #header-container {
   width: 45%;
+  padding-left: 0%;
 }
 
 #header-projects {
@@ -484,7 +490,13 @@ fieldset {
 
 #header-job-title {
   font-size: 3.5rem;
-/*  padding-right: 7%;*/
+  margin-left: 4%;
+  margin-top: 0;
+}
+
+
+.header-nav {
+  opacity: 0;
 }
 
 #projects-container {

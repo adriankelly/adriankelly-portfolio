@@ -9,9 +9,9 @@ $(document).ready(function() {
   function shrinkHeading() {
     if ( $(window).width() > 995) {
 
-      TweenMax.to('#header-container', 0.5, { width: "25%" });
-      TweenMax.to('#header-name', 0.5, { fontSize: "3.5rem", letterSpacing: "0.3rem" });
-      TweenMax.to('#header-job-title', 0.5, { fontSize: "3rem", letterSpacing: "0rem", paddingLeft: "7%", onStart: function() {
+      TweenMax.to('#header-container', 0.5, { width: "28.3%" });
+      TweenMax.to('#header-name', 0.5, { fontSize: "5.3rem", letterSpacing: "0.3rem", marginLeft: '0%' });
+      TweenMax.to('#header-job-title', 0.5, { fontSize: "3rem", letterSpacing: "0rem", marginLeft: '0%', onStart: function() {
           TweenMax.to('.header-nav', 1, { opacity: 1 });
           TweenMax.to('#header-projects', 0.5, { opacity: 0 });
           TweenMax.to('.project-wrap', 2, { opacity: 1 });
@@ -19,10 +19,9 @@ $(document).ready(function() {
       });
     }
     else if (( $(window).width() > 500)) {
-      TweenMax.to('#header-container', 0.5, { width: "30%" });
+      TweenMax.to('#header-container', 0.5, { width: "33.5%" });
       TweenMax.to('#header-name', 0.5, { fontSize: "3.5rem"});
       TweenMax.to('#header-job-title', 0.5, { fontSize: "1.3rem",paddingRight: "5%", onStart: function() {
-        TweenMax.to('.header-nav', 1, { opacity: 1 });
         TweenMax.to('#header-projects', 0.5, { opacity: 0 });
         TweenMax.to('.project-wrap', 2, { opacity: 1 });
         TweenMax.to('.overlay-infos', 0.1, { opacity: 1 });
@@ -43,6 +42,7 @@ $(document).ready(function() {
       TweenMax.to('#header-name', 0.5, { fontSize: "10rem" });
       TweenMax.to('#header-job-title', 0.5, {
         fontSize: "3.5rem",
+        marginLeft: '4%',
         onStart: function() {
           TweenMax.to('.header-nav', 0.5, { opacity: 0 });
           TweenMax.to('#header-projects', 1, { opacity: 1 });
@@ -54,7 +54,6 @@ $(document).ready(function() {
       TweenMax.to('#header-container', 0.5, { width: "60%" });
       TweenMax.to('#header-name', 0.5, { fontSize: "8rem"});
       TweenMax.to('#header-job-title', 0.5, { fontSize: "2.5rem", paddingRight: "7%", onStart: function() {
-          TweenMax.to('.header-nav', 1, { opacity: 0 });
           TweenMax.to('#header-projects', 0.5, { opacity: 1 });
           TweenMax.to('.project-wrap', 1, { opacity: 0 });
           TweenMax.to('.overlay-infos', 1, { opacity: 0 });
