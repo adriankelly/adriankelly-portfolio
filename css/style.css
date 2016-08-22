@@ -258,6 +258,7 @@ html {
   bottom: 0;
   left: 0;
   overflow-y: scroll;
+  z-index: 10000;
 }
 
 #digital-display-target {
@@ -296,6 +297,7 @@ html {
   background: rgba(58, 73, 87, 0.9);
   opacity: 0;
   overflow: scroll;
+  z-index: 11000;
 }
 
 #contact-close {
@@ -489,6 +491,10 @@ fieldset {
   top: 70%;
 }
 
+h2 {
+  text-align: left;
+  font-size: 3rem;
+}
 
 .overlay-infos p,
 .overlay-infos ul {
