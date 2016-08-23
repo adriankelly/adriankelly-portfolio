@@ -9,157 +9,80 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
-  <!-- Google Tag Manager -->
-  <noscript>
-    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NV2R2P" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-
-  <script>
-  (function(w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({
-      'gtm.start': new Date().getTime(),
-      event: 'gtm.js'
-    });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src =
-      '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, 'script', 'dataLayer', 'GTM-NV2R2P');
-  </script>
-  <!-- End Google Tag Manager -->
-
-  <div id="main-container">
-    <div id="main-bg-img"></div>
-
-    <div id="header-container">
-      <h1 id="header-name">adrian<span>kelly</span></h1>
-      <h2 id="header-job-title">web developer</h2>
+<body class="mainPage">
+  <header>
+    <h1>adrian<span>kelly</span></h1>
+    <h2>web developer</h2>
+    <p class="links">
+      <a href="#work">See my work,</a> or
+      <a id="contact-link" href="#contact">contact me directly.</a></p>
+    <p class="links"> I also have a <a href="https://www.linkedin.com/in/adriankellyweb">linkedin</a> and
+      <a href="https://github.com/adriankelly">github</a> account.
+    </p>
+  </header>
+  <section id="current">
+    <p>Currently I'm employed at <a href="https://www.candyspace.com/">Candyspace</a>, a digital agency based in London.
+      <br/>
+      <br/> I'm also available for freelance work.</p>
+  </section>
+  <section id="work">
+    <h2>Previous Work</h2>
+    <a href="http://www.breezeplease.com" class="work-image"><img src="./img/breezeplease.jpg"></a>
+    <h3 class="work-name"><a href="http://www.breezeplease.com">breezeplease</a></h3>
+    <p>AngularJS app that fetches current wind speed anywhere in the world</p>
+    <ul>
+      <li>Built within the AngularJS framework employing custom filters, directives, services</li>
+      <li>Using the $http AngularJS service, returns wind speed from the Yahoo Weather API</li>
+      <li>Makes use of Amazon Web Services, with hosting of project in an S3 bucket</li>
+      <li>Accounts for user input of region and country to enable more accurate wind speed results</li>
+      <li>Animations and graphics are entirely CSS and react to the particular wind speed that is returned after user input</li>
+    </ul>
+    <a href="http://www.chaustracks.com" class="work-image"><img src="./img/chaustracks.jpg"></a>
+    <h3 class="work-name"><a href="http://www.chaustracks.com">chaustracks</a></h3>
+    <p>Music blog featuring curated list of tracks</p>
+    <ul>
+      <li>Uses PHP throughout, with WordPress as the CMS for easy updating of content by authors</li>
+      <li>Currently migrating site to a Virtual Private Cloud on Amazon Web Services, with an EC2 instance routed to an RDS instance that is within a private subnet</li>
+      <li>AJAX employed for lazy loading of older posts on the homepage and for loading posts filtered by month on the archives page</li>
+      <li>Site created within the Bootstrap framework, with Sass used as the CSS preprocessor</li>
+    </ul>
+    <a href="https://adriankelly.github.io/etch-a-sketch/" class="work-image"><img src="./img/etch-a-sketch.jpg"></a>
+    <h3 class="work-name"><a href="https://adriankelly.github.io/etch-a-sketch/">etch-a-sketch</a></h3>
+    <p>Creation of an Etch-a-Sketch canvas using JavaScript and jQuery. Project idea sourced from The Odin Project - a web development training website</p>
+    <ul>
+      <li>Etch-a-Sketch canvas entirely generated with JavaScript and jQuery</li>
+      <li>Expanded upon original project idea by including form validation and custom width of canvas</li>
+      <li>Users have the option of generating a sketch using black or randomly generated colours</li>
+    </ul>
+    <a href="https://adriankelly.github.io/business-theme/" class="work-image"><img src="./img/business-responsive.jpg"></a>
+    <h3 class="work-name"><a href="https://adriankelly.github.io/business-theme/">business responsive</a></h3>
+    <ul>
+      <li>Built from a Photoshop design of the site's layout on a desktop computer, with relevant images being sliced from this design</li>
+      <li>Without the ability to rely upon designs for the site on handheld devices, responsive layout changes were dicated by the appearance of the site at particular widths</li>
+    </ul>
+    <h3 class="work-name digital-display">digital display creatives</h3>
+    <div id="mazda_970x250">
+      <div class="project-image"><img class="display-project-img" src="./display-work/mazda_970x250.jpg"></div>
+      <p class="digital-display-work">Mazda CX-3 970x250</p>
     </div>
-    <nav id="header-nav-container">
-      <ul>
-        <li><a class="nav-links" id="contact-link" href="#">contact ></a></li>
-        <li><a class="nav-links" href="https://github.com/adriankelly">github ></a></li>
-        <li><a class="nav-links" href="https://www.linkedin.com/in/adriankellyweb">linkedin ></a></li>
-      </ul>
-    </nav>
-
-
-    <div id="projects-container">
-
-      <div class="project-wrap">
-        <div class="project-link-wrap">
-          <a href="http://www.breezeplease.com" class="project-image"><img src="./img/breezeplease.jpg"></a>
-        </div>
-          <h2 class="project-name"><a href="http://www.breezeplease.com">breezeplease</a></h2>
-          <div class="project-info">
-          <a href="http://www.breezeplease.com">
-            <p>AngularJS app that fetches current wind speed anywhere in the world</p>
-            <ul>
-              <li>Built within the AngularJS framework employing custom filters, directives, services</li>
-              <li>Using the $http AngularJS service, returns wind speed from the Yahoo Weather API</li>
-              <li>Makes use of Amazon Web Services, with hosting of project in an S3 bucket</li>
-              <li>Accounts for user input of region and country to enable more accurate wind speed results</li>
-              <li>Animations and graphics are entirely CSS and react to the particular wind speed that is returned after user input</li>
-            </ul>
-            </a>
-          </div>
-
-      </div>
-
-      <div class="project-wrap">
-        <div class="project-link-wrap">
-          <a href="http://www.chaustracks.com" class="project-image"><img src="./img/chaustracks.jpg"></a>
-        </div>
-        <div class="overlay-box"></div>
-        <div class="overlay-infos">
-          <h2 class="project-name"><a href="http://www.chaustracks.com">chaustracks</a></h2>
-          <div class="project-info">
-          <a href="http://www.chaustracks.com">
-            <p>Music blog featuring curated list of tracks</p>
-            <ul>
-              <li>Uses PHP throughout, with WordPress as the CMS for easy updating of content by authors</li>
-              <li>Currently migrating site to a Virtual Private Cloud on Amazon Web Services, with an EC2 instance routed to an RDS instance that is within a private subnet</li>
-              <li>AJAX employed for lazy loading of older posts on the homepage and for loading posts filtered by month on the archives page</li>
-              <li>Site created within the Bootstrap framework, with Sass used as the CSS preprocessor</li>
-            </ul>
-          </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-wrap">
-        <div class="project-link-wrap">
-          <a href="https://adriankelly.github.io/etch-a-sketch/" class="project-image"><img src="./img/etch-a-sketch.jpg"></a>
-        </div>
-        <div class="overlay-box"></div>
-        <div class="overlay-infos">
-          <h2 class="project-name"><a href="https://adriankelly.github.io/etch-a-sketch/">etch-a-sketch</a></h2>
-          <div class="project-info">
-          <a href="https://adriankelly.github.io/etch-a-sketch/">
-            <p>Creation of an Etch-a-Sketch canvas using JavaScript and jQuery. Project idea sourced from The Odin Project - a web development training website</p>
-            <ul>
-              <li>Etch-a-Sketch canvas entirely generated with JavaScript and jQuery</li>
-              <li>Expanded upon original project idea by including form validation and custom width of canvas</li>
-              <li>Users have the option of generating a sketch using black or randomly generated colours</li>
-            </ul>
-          </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-wrap">
-        <div class="project-link-wrap">
-          <a href="https://adriankelly.github.io/business-theme/" class="project-image"><img src="./img/business-responsive.jpg"></a>
-        </div>
-        <div class="overlay-box"></div>
-        <div class="overlay-infos">
-          <h2 class="project-name"><a href="https://adriankelly.github.io/business-theme/">business responsive</a></h2>
-          <div class="project-info">
-          <a href="https://adriankelly.github.io/business-theme/">
-            <ul>
-              <li>Built from a Photoshop design of the site's layout on a desktop computer, with relevant images being sliced from this design</li>
-              <li>Without the ability to rely upon designs for the site on handheld devices, responsive layout changes were dicated by the appearance of the site at particular widths</li>
-            </ul>
-          </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-wrap">
-        <h2 id="display-work-heading">digital display creatives</h2>
-        <div id="mazda_970x250" class="project-link-wrap">
-          <div class="project-image"><img class="display-project-img" src="./display-work/mazda_970x250.jpg"></div>
-          <div class="display-project-overlay">Mazda CX-3 970x250</div>
-        </div>
-      </div>
-
-    </div>  <!-- end of projects-container -->
-
-    <div id="contact">
-      <div id="contact-container">
-        <div id="contact-close">&#215;</div>
-        <form id="contact-form" action="https://formspree.io/hello@adriankelly.net" method="post">
-          <fieldset>
-            <textarea type="text" rows="8" name="name" id="msg-input" class="form-textarea" placeholder="Your Message" required></textarea>
-            <input type="email" name="_replyto" placeholder="Your Email" class="form-email" required>
-            <input type="submit" id="submit" value="Send" class="form-submit">
-          </fieldset>
-        </form>
-      </div>
+  </section>
+  <div id="contact">
+    <div id="contact-container">
+      <div id="contact-close">&#215;</div>
+      <form id="contact-form" action="https://formspree.io/hello@adriankelly.net" method="post">
+        <fieldset>
+          <textarea type="text" rows="8" name="name" id="msg-input" class="form-textarea" placeholder="Your Message" required></textarea>
+          <input type="email" name="_replyto" placeholder="Your Email" class="form-email" required>
+          <input type="submit" id="submit" value="Send" class="form-submit">
+        </fieldset>
+      </form>
     </div>
-
+    </div>
     <div id="contact-bg-cover"></div>
-
     <div id="display-work-bg-cover">
       <div id="digital-display-target">
         <div id="display-work-close">&#215;</div>
       </div>
-
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
