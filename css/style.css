@@ -17,7 +17,7 @@ body {
 }
 .mainPage header {
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .mainPage header h1 {
@@ -31,15 +31,17 @@ body {
 .mainPage header h2 {
   font-family: 'Josefin Sans', sans-serif;
   margin-top: -0.5rem;
+  margin-left: 0.2rem;
   letter-spacing: 0.1rem;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin-bottom: 3rem;
 }
 
 .links {
   font-family: 'Cousine', monospace;
   font-size: 1.3rem;
-  padding-top: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
 }
 .mainPage a {
   color: #55BED7;
@@ -51,13 +53,14 @@ body {
 }
 
 .mainPage section {
-  margin-top: 7rem;
+  margin-top: 6rem;
   font-size: 1.2rem;
   font-family: 'Cousine', monospace;
 }
 
 #current {
   text-align: center;
+  font-size: 1rem;
 }
 
 #work h2 {
@@ -256,18 +259,24 @@ fieldset {
 }
 .mainPage header h2 {
   letter-spacing: 0.2rem;
-  font-size: 3.5rem;
+  font-size: 3.8rem;
+  margin-left: 0.5rem;
 }
 
 .links {
   font-size: 2rem;
-  padding-top: 2.6rem;
+  line-height: 4rem;
 }
 
 .mainPage section {
   margin-top: 12rem;
   font-size: 2rem;
   font-family: 'Cousine', monospace;
+}
+
+
+#current {
+  font-size: 1.9rem;
 }
 
 #work h2 {
@@ -326,7 +335,7 @@ fieldset {
 }
 .mainPage header h2 {
   letter-spacing: 0.2rem;
-  font-size: 3.5rem;
+  /*font-size: 3.5rem;*/
 }
 
 .links {
