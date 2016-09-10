@@ -304,7 +304,7 @@ a {
     letter-spacing: .15em;
     /* Adjust as needed */
     /*opacity: 0;*/
-    width: 39%;
+    width: 40%;
     animation: type 1s steps(20, end), blink-caret 1s step-end 6 forwards;
   }
   .project {
