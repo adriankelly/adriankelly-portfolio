@@ -1,0 +1,263 @@
+.font-overwrite {
+  font-family: 'Cousine', monospace;
+}
+
+#main-container {
+  background-color: #FAEBD7;
+  color: #3A4957;
+}
+.links a {
+  color: #55BED7;
+  text-decoration: none;
+}
+
+.mdl-layout__header {
+  background-color: transparent;
+  color: #3A4957;
+}
+#main-nav a {
+  color: #3A4957;
+}
+.layout-transparent {
+  background: url('https://getmdl.io/assets/demos/transparent.jpg') center / contain;
+}
+
+.links,
+.currentStatus {
+  text-align: center;
+}
+
+
+.mdl-card__title {
+  color: #fff;
+  width: 100%;
+  height: 200px;
+  background-size: 100%;
+  background-repeat: no-repeat;  
+}
+
+.mdl-card__project-copy li {
+  display: none;
+}
+
+#project-img-breezeplease {
+  background-image: url('./img/breezeplease.jpg');
+}
+
+#project-img-chaustracks {
+  background-image: url('./img/chaustracks.jpg');
+}
+
+#project-img-etchasketch {
+  background-image: url('./img/etch-a-sketch.jpg');
+}
+
+#project-img-business-responsive {
+  background-image: url('./img/business-responsive.jpg');
+}
+
+.section--center {
+  max-width: 960px;
+}
+
+
+#footer-nav {
+  background-color: transparent;
+  position: fixed;
+  bottom: 5%;
+  right: 7%;
+  z-index: 10;
+  color: #FAEBD7;
+}
+
+.footer-nav--btn {
+  min-width: 42px;
+  min-height: 42px;
+}
+
+#mdl-menu-top-right {
+  background-color: rgba(0,0,0,0.4);
+}
+.mdl-mini-footer__right-section button {
+  background-color: transparent;
+}
+
+
+
+
+
+
+#contact-bg-cover {
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+  z-index: 10000;
+}
+
+
+
+
+
+#contact {
+  max-width: 80%;
+  position: fixed;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  display: none;
+  padding: 2%;
+  background: white;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 11000;
+}
+
+#contact-close {
+  top: 2%;
+  right: 2%;
+  position: absolute;
+  color: #3A4957;
+  font-size: 2rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-textfield {
+  width: 95%;
+  display: block;
+}
+
+.form-submit {
+  padding: 5px 40px;
+  display: block;
+  border: 1px solid rgb(58, 73, 87);
+  background: rgba(198, 207, 209, 0.6);
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  color: #3A4957;
+}
+
+.form-submit:hover {
+  background-color: rgb(58, 73, 87);
+  border: 1px solid #FAEBD7;
+  color: #FAEBD7;
+}
+
+.main-logo {
+  width: 40%;
+  margin-top: 4%;
+}
+.main-logo span {
+  font-weight: 300;
+}
+.main-logo-heading-name {
+/*  margin: 0 auto;*/
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.main-logo h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+/*  border-right: .15em solid orange;*/ /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  /*opacity: 0;*/
+  width: 100%;
+  text-align: center;
+  animation: 
+    type 1s steps(20, end);
+/*  animation-name: opacityUp;
+  animation-duration: 0.1; 
+  animation-delay: 0.1s;    */
+}
+
+.main-logo h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+/*  border-right: .15em solid orange;*/ /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens 
+  letter-spacing: .15em; /* Adjust as needed */
+  width: 75%;
+  text-align: center;  
+  animation: type2 2s steps(20, end);
+}
+
+#main-nav-title {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+/*  border-right: .15em solid orange;*/ /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  /*opacity: 0;*/
+  width: 40%;
+  animation: 
+    type 1s steps(20, end);  
+}
+
+.main-logo-h2-cursor {
+  animation: blink 1s 6;
+  animation-fill-mode: forwards;   
+  font-size: 2.5rem;
+  vertical-align: middle;
+}
+
+/* The typing effect */
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  48%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+/* The typewriter cursor effect */
+@keyframes blink {
+  to{opacity: .0;}
+}
+
+.mdl-menu__item a,
+.mdl-menu__item li {
+  text-decoration: none;
+  color: #3A4957;
+}
+
+@media only screen
+and (min-width : 1224px) {
+  .links a:hover,
+  #main-nav a:hover {
+    background-color: rgb(58, 73, 87);
+    color: #FAEBD7;
+  }
+
+.currentStatus:nth-child(1) {
+  margin-top: 4rem;
+}
+
+.currentStatus p {
+  font-size: 2.2rem;
+  line-height: 4rem;
+  margin-top: 3rem;
+}
+
+
+
+.currentStatus:nth-child(2) {
+  margin-bottom: 15rem;
+}
+
+

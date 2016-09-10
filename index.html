@@ -1,92 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Fetch material design light styles -->
+  <link rel="stylesheet" href="./mdl/material.min.css">
+  <script src="./mdl/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Fetch font -->
+  <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
   <title>Adrian Kelly | Web Developer</title>
-  <link href="https://fonts.googleapis.com/css?family=Cousine|Josefin+Sans:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body class="mainPage">
-  <header>
-    <h1>adrian<span>kelly</span></h1>
-    <h2>web developer</h2>
-    <p class="links">
-      <a href="#work">See my work,</a> or
-      <a id="contact-link" href="#contact">contact me directly.</a></p>
-    <p class="links"> I can also be found on <a href="https://www.linkedin.com/in/adriankellyweb">linkedin</a> and
-      <a href="https://github.com/adriankelly">github.</a>
-    </p>
-  </header>
-  <section>
-    <p  id="current" class="links">Currently I'm employed at <a href="https://www.candyspace.com/">Candyspace</a>, a digital agency based in London.<br/>I'm available for freelance work.</p>
-  </section>
-  <section id="work">
-    <h2>Previous Work</h2>
-    <a href="http://www.breezeplease.com" class="work-image"><img src="./img/breezeplease.jpg"></a>
-    <h3 class="work-name"><a href="http://www.breezeplease.com">breezeplease</a></h3>
-    <p>AngularJS app that fetches current wind speed anywhere in the world</p>
-    <ul>
-      <li>Built within the AngularJS framework employing custom filters, directives, services</li>
-      <li>Using the $http AngularJS service, returns wind speed from the Yahoo Weather API</li>
-      <li>Makes use of Amazon Web Services, with hosting of project in an S3 bucket</li>
-      <li>Accounts for user input of region and country to enable more accurate wind speed results</li>
-      <li>Animations and graphics are entirely CSS and react to the particular wind speed that is returned after user input</li>
-    </ul>
-    <a href="http://www.chaustracks.com" class="work-image"><img src="./img/chaustracks.jpg"></a>
-    <h3 class="work-name"><a href="http://www.chaustracks.com">chaustracks</a></h3>
-    <p>Music blog featuring curated list of tracks</p>
-    <ul>
-      <li>Uses PHP throughout, with WordPress as the CMS for easy updating of content by authors</li>
-      <li>Currently migrating site to a Virtual Private Cloud on Amazon Web Services, with an EC2 instance routed to an RDS instance that is within a private subnet</li>
-      <li>AJAX employed for lazy loading of older posts on the homepage and for loading posts filtered by month on the archives page</li>
-      <li>Site created within the Bootstrap framework, with Sass used as the CSS preprocessor</li>
-    </ul>
-    <a href="https://adriankelly.github.io/etch-a-sketch/" class="work-image"><img src="./img/etch-a-sketch.jpg"></a>
-    <h3 class="work-name"><a href="https://adriankelly.github.io/etch-a-sketch/">etch-a-sketch</a></h3>
-    <p>Creation of an Etch-a-Sketch canvas using JavaScript and jQuery. Project idea sourced from The Odin Project - a web development training website</p>
-    <ul>
-      <li>Etch-a-Sketch canvas entirely generated with JavaScript and jQuery</li>
-      <li>Expanded upon original project idea by including form validation and custom width of canvas</li>
-      <li>Users have the option of generating a sketch using black or randomly generated colours</li>
-    </ul>
-    <a href="https://adriankelly.github.io/business-theme/" class="work-image"><img src="./img/business-responsive.jpg"></a>
-    <h3 class="work-name"><a href="https://adriankelly.github.io/business-theme/">business responsive</a></h3>
-    <ul>
-      <li>Built from a Photoshop design of the site's layout on a desktop computer, with relevant images being sliced from this design</li>
-      <li>Without the ability to rely upon designs for the site on handheld devices, responsive layout changes were dicated by the appearance of the site at particular widths</li>
-    </ul>
-    <h3 class="work-name digital-display">digital display creatives</h3>
-    <div id="mazda_970x250">
-      <div class="project-image"><img class="display-project-img" src="./display-work/mazda_970x250.jpg"></div>
-      <p class="digital-display-work">Mazda CX-3 970x250</p>
-    </div>
-  </section>
-  <div id="contact">
-    <div id="contact-container">
-      <div id="contact-close">&#215;</div>
-      <form id="contact-form" action="https://formspree.io/hello@adriankelly.net" method="post">
-        <fieldset>
-          <textarea type="text" rows="8" name="name" id="msg-input" class="form-textarea" placeholder="Your Message" required></textarea>
-          <input type="email" name="_replyto" placeholder="Your Email" class="form-email" required>
-          <input type="submit" id="submit" value="Send" class="form-submit">
-        </fieldset>
-      </form>
-    </div>
-    </div>
-    <div id="contact-bg-cover"></div>
-    <div id="display-work-bg-cover">
-      <div id="digital-display-target">
-        <div id="display-work-close">&#215;</div>
+<body class="mdl-base font-overwrite">
+  <div id="main-container" class="mdl-layout__container">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header has-tabs is-upgraded">
+      <!-- Large screen nav bar -->
+      <header class="mdl-layout__header mdl-layout--large-screen-only">
+        <div class="mdl-layout__header-row">
+          <span id="main-nav-title" class="mdl-layout-title font-overwrite">Adrian Kelly | Web Developer<span class="main-logo-h2-cursor">&#x2588;</span></span>
+          <div class="mdl-layout-spacer"></div>
+          <nav id="main-nav" class="mdl-navigation">
+            <a class="mdl-navigation__link" href="#work">Work</a>
+            <a class="mdl-navigation__link contact" href="#contact">Contact</a>
+            <a class="mdl-navigation__link" href="https://www.linkedin.com/in/adriankellyweb">LinkedIn</a>
+            <a class="mdl-navigation__link" href="https://github.com/adriankelly">GitHub</a>
+          </nav>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+      <!-- Logo -->
+<!--         <div class="mdl-grid main-logo">
+          <h1 class="main-logo-heading-name font-overwrite">adrian kelly</h1>
+          <h2 class="main-logo-heading-job font-overwrite">Web Developer<span class="main-logo-h2-cursor">&#x2588;</span></h2>
+       </div> -->
+       <div class="mdl-grid section--center currentStatus links">
+        <div class="mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">
+          <p><a href="#work">See my work</a>, or <a id="contact-link" href="#contact" class="contact">contact me directly</a>.
+            I can also be found on <a href="https://www.linkedin.com/in/adriankellyweb">LinkedIn</a> and
+            <a href="https://github.com/adriankelly">GitHub</a>.</p>
+          </div>
+        </div>
+        <div class="mdl-grid section--center currentStatus links">
+          <p class="mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">Currently I'm employed at <a href="https://www.candyspace.com/">Candyspace</a>, a digital agency based in London.
+            <br>I'm available for freelance work.</p>
+          </div>
+          <section id="work" class="section--center mdl-grid">
+            <div class="mdl-card mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project">
+              <div id="project-img-breezeplease" class="mdl-card__title mdl-card--expand">
+
+              </div>
+
+              <div class="mdl-card__supporting-text">
+              <h2 class="mdl-card__title-text font-overwrite">breezeplease</h2>              
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <ul class="mdl-card__project-copy">
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                </ul>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect loadToggle">Read More</a>
+              </div>
+            </div>
+            <div class="mdl-card mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project">
+              <div id="project-img-chaustracks" class="mdl-card__title mdl-card--expand">
+
+              </div>
+              <div class="mdl-card__supporting-text">
+                <h2 class="mdl-card__title-text font-overwrite">chaustracks</h2>              
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <ul class="mdl-card__project-copy">
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                </ul>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect loadToggle">Read More</a>
+              </div>
+            </div>
+            <div class="mdl-card mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project">
+              <div id="project-img-etchasketch" class="mdl-card__title mdl-card--expand">
+
+              </div>
+              <div class="mdl-card__supporting-text">
+                <h2 class="mdl-card__title-text font-overwrite">etch-a-sketch</h2>              
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <ul class="mdl-card__project-copy">
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                </ul>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect loadToggle">Read More</a>
+              </div>
+            </div>
+            <div class="mdl-card mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project">
+              <div id="project-img-business-responsive" class="mdl-card__title mdl-card--expand">
+
+              </div>
+              <div class="mdl-card__supporting-text">
+                <h2 class="mdl-card__title-text font-overwrite">business responsive</h2>              
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <ul class="mdl-card__project-copy">
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                </ul>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect loadToggle">Read More</a>
+              </div>
+            </div>
+            <div class="mdl-card mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project">
+              <div class="mdl-card__title mdl-card--expand">
+                <h2 class="mdl-card__title-text font-overwrite">Lorem</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <ul class="mdl-card__project-copy">
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus veritatis dignissimos</li>
+                </ul>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect loadToggle">Read More</a>
+              </div>
+            </div>
+          </section>
+          <div id="contact">
+            <div id="contact-container">
+
+              <form id="contact-form" action="https://formspree.io/hello@adriankelly.net" method="post">
+                <div class="mdl-textfield contact-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <textarea type="text" rows="8" name="name" id="msg-input" class="mdl-textfield__input"></textarea>
+                  <label class="mdl-textfield__label" for="msg-input">Message...</label>
+                </div>
+                <div class="mdl-textfield contact-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input id="emailInput" type="email" name="_replyto" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                  <label class="mdl-textfield__label" for="emailInput">Email...</label>
+                  <span class="mdl-textfield__error">Input is not a valid email</span>
+                </div>
+                <input type="submit" id="submit" value="Send" class="form-submit">
+              </form>
+              <div id="contact-close">&#215;</div>
+            </div>
+          </div>
+          <div id="contact-bg-cover"></div>
+        </main>
+        <footer class="mdl-layout mdl-js-layout">
+          <div id="footer-nav" class="mdl-layout--small-screen-only">
+            <button id="mdl-menu-top-right" class="mdl-button mdl-js-button mdl-button--icon footer-nav--btn">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="mdl-menu-top-right">
+              <li class="mdl-menu__item"><a href="#work">Work</a></li>
+              <li class="mdl-menu__item contact">Contact</li>
+              <li class="mdl-menu__item"><a href="https://www.linkedin.com/in/adriankellyweb">LinkedIn</a></li>
+              <li class="mdl-menu__item"><a href="https://github.com/adriankelly">GitHub</a></li>
+            </ul>
+          </div>
+        </footer>
       </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+    <!-- end of #main-container -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    
+    <script src="./script.js"></script>
+  </body>
 
-</html>
+  </html>
