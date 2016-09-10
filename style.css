@@ -31,7 +31,7 @@
 .mdl-card__title {
   color: #fff;
   width: 100%;
-  height: 200px;
+  /*height: 200px;*/
   background-size: 100%;
   background-repeat: no-repeat;  
 }
@@ -40,20 +40,8 @@
   display: none;
 }
 
-#project-img-breezeplease {
-  background-image: url('./img/breezeplease.jpg');
-}
-
-#project-img-chaustracks {
-  background-image: url('./img/chaustracks.jpg');
-}
-
-#project-img-etchasketch {
-  background-image: url('./img/etch-a-sketch.jpg');
-}
-
-#project-img-business-responsive {
-  background-image: url('./img/business-responsive.jpg');
+.mdl-card img {
+  width: 100%;
 }
 
 .section--center {
@@ -81,11 +69,6 @@
 .mdl-mini-footer__right-section button {
   background-color: transparent;
 }
-
-
-
-
-
 
 #contact-bg-cover {
   display: none;
@@ -197,21 +180,21 @@ fieldset {
 
 #main-nav-title {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-/*  border-right: .15em solid orange;*/ /* The typwriter cursor */
+  border-right: .75em solid #3A4957; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   /*opacity: 0;*/
-  width: 40%;
+  width: 39%;
   animation: 
-    type 1s steps(20, end);  
+    type 1s steps(20, end),
+    blink-caret 1s step-end 6 forwards;
 }
 
 .main-logo-h2-cursor {
-  animation: blink 1s 6;
-  animation-fill-mode: forwards;   
-  font-size: 2.5rem;
-  vertical-align: middle;
+  /*animation: blink-caret 1s step-end infinite;  */
+  font-size: 2rem;
+  vertical-align: bottom;
 }
 
 /* The typing effect */
@@ -229,6 +212,11 @@ fieldset {
 @keyframes blink {
   to{opacity: .0;}
 }
+@keyframes blink-caret {
+  from, to { border-color: rgba(0,0,0,0) }
+  50% { border-color: #3A4957; }
+}
+
 
 .mdl-menu__item a,
 .mdl-menu__item li {
