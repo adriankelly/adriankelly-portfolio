@@ -1,14 +1,72 @@
-.font-overwrite {
-  font-family: 'Cousine', monospace;
+body {
+    background-color: #FEFEFA;
 }
 
 #main-container {
-  background-color: #FAEBD7;
   color: #3A4957;
 }
-.links a {
-  color: #55BED7;
+
+.custom-font {
+  font-family: 'Cousine', monospace;
+  color: #3A4957;  
+}
+
+.section--center {
+  max-width: 960px;
+}
+
+a {
   text-decoration: none;
+}
+
+.project {
+  /*background-color: #FAEBD7;*/
+  width: 90%;
+}
+
+.project h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #3A4957;
+}
+.project p, 
+.project li {
+  width: 100%;
+  font-size: 0.75rem;
+  color: #3A4957;
+  /*font-family: "Roboto","Helvetica","Arial",sans-serif;*/
+}
+.project li {
+  margin: 0 auto;
+}
+
+.main-logo-mobile {
+  display: block;
+  padding-top: 2rem;
+}
+.main-logo-mobile-name {
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-logo-mobile-job {
+  font-size: 1.5rem;
+  text-align: center;
+  overflow: hidden; /* Ensures the content is not revealed until the animation *//* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens 
+  letter-spacing: .15em; /* Adjust as needed */
+  width: 65%;
+  line-height: 1.75rem; 
+  animation: 
+    type 1s steps(20, end);  
+
+}
+
+.links a {
+  color: #1BA1EE;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .mdl-layout__header {
@@ -17,17 +75,17 @@
 }
 #main-nav a {
   color: #3A4957;
+  cursor: pointer;
 }
-.layout-transparent {
-  background: url('https://getmdl.io/assets/demos/transparent.jpg') center / contain;
-}
-
-.links,
-.currentStatus {
-  text-align: center;
+.currently {
+  width: 90%;
 }
 
 
+.work-heading {
+  font-size: 2rem;
+  padding-left: 2%;
+}
 .mdl-card__title {
   color: #fff;
   width: 100%;
@@ -44,9 +102,7 @@
   width: 100%;
 }
 
-.section--center {
-  max-width: 960px;
-}
+
 
 
 #footer-nav {
@@ -87,11 +143,11 @@
 
 
 #contact {
-  max-width: 80%;
+  max-width: 60%;
   position: fixed;
   bottom: 10%;
-  left: 10%;
-  right: 10%;
+  left: 20%;
+  right: 20%;
   display: none;
   padding: 2%;
   background: white;
@@ -101,8 +157,8 @@
 }
 
 #contact-close {
-  top: 2%;
-  right: 2%;
+  top: 10px;
+  right: 10px;
   position: absolute;
   color: #3A4957;
   font-size: 2rem;
@@ -110,19 +166,15 @@
   cursor: pointer;
 }
 
-fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
 .contact-textfield {
   width: 95%;
   display: block;
+  margin: 0 auto;
 }
 
 .form-submit {
   padding: 5px 40px;
+  margin-left: 2.5%;
   display: block;
   border: 1px solid rgb(58, 73, 87);
   background: rgba(198, 207, 209, 0.6);
@@ -139,9 +191,9 @@ fieldset {
 }
 
 .main-logo {
-  width: 40%;
-  margin-top: 4%;
+  width: 80%;
 }
+
 .main-logo span {
   font-weight: 300;
 }
@@ -151,50 +203,11 @@ fieldset {
   font-weight: 700;
 }
 
-.main-logo h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-/*  border-right: .15em solid orange;*/ /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  /*opacity: 0;*/
-  width: 100%;
-  text-align: center;
-  animation: 
-    type 1s steps(20, end);
-/*  animation-name: opacityUp;
-  animation-duration: 0.1; 
-  animation-delay: 0.1s;    */
-}
-
-.main-logo h2 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-/*  border-right: .15em solid orange;*/ /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens 
-  letter-spacing: .15em; /* Adjust as needed */
-  width: 75%;
-  text-align: center;  
-  animation: type2 2s steps(20, end);
-}
-
-#main-nav-title {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .75em solid #3A4957; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  /*opacity: 0;*/
-  width: 39%;
-  animation: 
-    type 1s steps(20, end),
-    blink-caret 1s step-end 6 forwards;
-}
 
 .main-logo-h2-cursor {
   /*animation: blink-caret 1s step-end infinite;  */
-  font-size: 2rem;
-  vertical-align: bottom;
+  /*font-size: 0.4rem;*/
+  vertical-align: middle;
 }
 
 /* The typing effect */
@@ -224,28 +237,81 @@ fieldset {
   color: #3A4957;
 }
 
-@media only screen
-and (min-width : 1224px) {
-  .links a:hover,
-  #main-nav a:hover {
-    background-color: rgb(58, 73, 87);
-    color: #FAEBD7;
-  }
 
-.currentStatus:nth-child(1) {
-  margin-top: 4rem;
+@media only screen
+and (min-width : 500px) {
+  .work-heading {
+    padding-left: 7%;
+  }
 }
 
-.currentStatus p {
-  font-size: 2.2rem;
+/*Large Screen*/
+
+@media only screen
+and (min-width : 1024px) {
+  
+#main-nav a {
+  font-size: 1.25rem;
+  padding-top: 0.25rem;
+}
+
+.links a:hover,
+#main-nav a:hover {
+  background-color: rgb(58, 73, 87);
+  color: #FAEBD7;
+}
+
+.work-heading {
+  font-size: 2.5rem;
+}
+
+.main-logo {
+  width: 40%;
+  margin-top: 4%;
+}
+.main-logo-h2-cursor {
+  /*animation: blink-caret 1s step-end infinite;  */
+  font-size: 2rem;
+  vertical-align: bottom;
+}
+
+.main-logo-mobile {
+  display: none;
+}
+
+#main-nav-title {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .75em solid #3A4957; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  /*opacity: 0;*/
+  width: 39%;
+  animation: 
+    type 1s steps(20, end),
+    blink-caret 1s step-end 6 forwards;
+}
+
+.project {
+  width: 100%;
+}
+.currently p {
+  font-size: 1.75rem;
   line-height: 4rem;
+  margin-top: 5rem;
+}
+.currently-status p {
   margin-top: 3rem;
 }
 
+.project p, 
+.project li {
+  width: 80%;
+  font-size: 1rem;
+}
 
-
-.currentStatus:nth-child(2) {
-  margin-bottom: 15rem;
+.currently-status {
+  margin-bottom: 10rem;
 }
 
 
