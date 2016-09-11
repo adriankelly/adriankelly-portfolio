@@ -1,5 +1,15 @@
 $(document).ready(function () {
-    console.log('ready');
+
+    $(function(){
+        $("#main-nav-title").typed({
+            strings: ["Adrian Kelly // Web Developer."],
+            typeSpeed: 0,
+            startDelay: 2000,
+            cursorChar: "&#x2588;"
+        });
+    });
+
+
     var loadMoreActive = false;
     $('.loadToggle').click(function (e) {
         var target = $(this);

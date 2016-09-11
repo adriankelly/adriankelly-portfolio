@@ -53,21 +53,6 @@ a {
   text-align: center;
 }
 
-.main-logo-mobile-job {
-  font-size: 1.5rem;
-  text-align: center;
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens 
-  letter-spacing: .15em; /* Adjust as needed */
-  width: 65%;
-  line-height: 1.75rem;
-  animation: type 1s steps(20, end);
-}
 
 .links a {
   color: #1BA1EE;
@@ -213,43 +198,29 @@ a {
 }
 
 
-/* The typing effect */
-
-@keyframes type {
-  from {
-    width: 0;
-  }
+.typed-cursor{
+    font-size: 2.3rem;
+    padding-top: 0.4rem;
+    opacity: 0;
+    -webkit-animation: blink 0.7s 8;
+    -moz-animation: blink 0.7s 8;
+    animation: blink 0.7s 8;
+    animation-fill-mode: forwards;
 }
-
-@keyframes type2 {
-  0% {
-    width: 0;
-  }
-  48% {
-    width: 0;
-  }
-  100% {
-    width: 100;
-  }
+@keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:1; }
+    100% { opacity:0; }
 }
-
-
-/* The typewriter cursor effect */
-
-@keyframes blink {
-  to {
-    opacity: .0;
-  }
+@-webkit-keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:1; }
+    100% { opacity:0; }
 }
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: rgba(0, 0, 0, 0)
-  }
-  50% {
-    border-color: #3A4957;
-  }
+@-moz-keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:1; }
+    100% { opacity:0; }
 }
 
 .mdl-menu__item a,
@@ -284,28 +255,11 @@ a {
     width: 40%;
     margin-top: 4%;
   }
-  .main-logo-h2-cursor {
-    /*animation: blink-caret 1s step-end infinite;  */
-    font-size: 2rem;
-    vertical-align: bottom;
-  }
+
   .main-logo-mobile {
     display: none;
   }
-  #main-nav-title {
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .75em solid #3A4957;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em;
-    /* Adjust as needed */
-    /*opacity: 0;*/
-    width: 40%;
-    animation: type 1s steps(20, end), blink-caret 1s step-end 6 forwards;
   }
   .project {
     width: 100%;
