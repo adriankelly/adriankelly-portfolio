@@ -53,6 +53,10 @@ a {
   text-align: center;
 }
 
+.main-logo-mobile-job {
+  font-size: 1.5rem;
+  text-align: center;
+}
 
 .links a {
   color: #1BA1EE;
@@ -72,6 +76,11 @@ a {
 
 .currently {
   width: 90%;
+}
+
+.currently-copy {
+  text-align: center;
+  font-size: 1em;
 }
 
 .work-heading {
@@ -259,8 +268,7 @@ a {
   .main-logo-mobile {
     display: none;
   }
-    letter-spacing: .15em;
-  }
+
   .project {
     width: 100%;
   }
@@ -272,6 +280,13 @@ a {
   .currently-status p {
     margin-top: 3rem;
   }
+
+  .currently-copy {
+    text-align: left;
+/*    font-size: 1em;*/
+  }
+
+
   .project p,
   .project li {
     width: 80%;
