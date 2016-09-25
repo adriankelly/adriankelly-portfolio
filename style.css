@@ -11,6 +11,9 @@ body {
   color: #3A4957;
 }
 
+.read-more {
+  border: 2px solid #3A4957;
+}
 .section--center {
   max-width: 960px;
 }
