@@ -1,15 +1,79 @@
+* {
+  /*border: 1px solid red;*/
+}
+
 body {
   background-color: #FEFEFA;
 }
 
 #main-container {
   color: #3A4957;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;  
 }
 
-.custom-font {
-  font-family: 'Cousine', monospace;
-  color: #3A4957;
+.heading-name {
+  font-weight: 200;
+  text-align: center;
+  margin: 0;
 }
+
+.heading-job {
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
+
+.story {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1184B1;
+  color: white;
+  text-align: left;
+}
+
+.projects-section {
+  width: 100%;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+.project-breezeplease {
+  background-color: #0064A4;
+}
+
+.project-chaustracks {
+  background-color: #1F1F20;
+}
+
+.project-sketch {
+  background-color: #622364;
+}
+
+.project-business {
+  background-color: #569EB5;
+}
+
+.project-text {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 5%;  
+}
+.project-text-headng {
+  font-size: 1.75em;
+}
+.project-text-body {
+  padding: 5%;
+}
+
+.project-link-icon {
+  display: block;
+  margin: 0 auto;
+}
+
 
 .read-more {
   border: 2px solid #3A4957;
@@ -23,23 +87,10 @@ a {
 }
 
 .project {
-  /*background-color: #FAEBD7;*/
   width: 90%;
 }
 
-.project h2 {
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: #3A4957;
-}
 
-.project p,
-.project li {
-  width: 100%;
-  font-size: 0.75rem;
-  color: #3A4957;
-  /*font-family: "Roboto","Helvetica","Arial",sans-serif;*/
-}
 
 .project li {
   margin: 0 auto;
@@ -56,14 +107,11 @@ a {
   text-align: center;
 }
 
-.main-logo-mobile-job {
-  font-size: 1.5rem;
-  text-align: center;
-}
+
 
 .links a {
-  color: #1BA1EE;
-  text-decoration: none;
+  color: white;
+  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -82,13 +130,14 @@ a {
 }
 
 .currently-copy {
-  text-align: center;
+  /*margin: 3% 0 0;*/
+  padding: 2% 5% 0;
+
   font-size: 1em;
 }
 
-.work-heading {
-  font-size: 2rem;
-  padding-left: 2%;
+.currently-status {
+  margin-bottom: 8%;
 }
 
 .mdl-card__title {
@@ -260,9 +309,11 @@ a {
     background-color: rgb(58, 73, 87);
     color: #FAEBD7;
   }
-  .work-heading {
-    font-size: 2.5rem;
-  }
+.projects-section {
+  width: 100%;
+  text-align: left;
+  font-size: 2.5em;
+}
   .main-logo {
     width: 40%;
     margin-top: 4%;
@@ -271,6 +322,10 @@ a {
   .main-logo-mobile {
     display: none;
   }
+
+.story {
+  background-position-y: 30%;
+}
 
   .project {
     width: 100%;
