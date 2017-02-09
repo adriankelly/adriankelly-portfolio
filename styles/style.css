@@ -90,6 +90,7 @@ a {
   padding: 5%;
   color: white;
   text-align: center;
+  margin: 0 auto;
 }
 
 .project-text-body {
@@ -105,6 +106,10 @@ a {
 .project-link-icon {
   display: block;
   margin: 0 auto;
+}
+
+.business {
+  font-size: 30px;
 }
 
 .read-more-wrap {
@@ -134,7 +139,7 @@ a {
 
 
 .section--center {
-  max-width: 960px;
+  max-width: 1024px;
 }
 
 
@@ -313,12 +318,7 @@ a {
     50% { opacity:1; }
     100% { opacity:0; }
 }
-/*
-.mdl-menu__item a,
-.mdl-menu__item li {
-  text-decoration: none;
-  color: #3A4957;
-}*/
+
 
 @media only screen and (min-width: 500px) {
   .work-heading {
@@ -338,18 +338,9 @@ a {
   #main-nav a:hover {
     color: black;
     font-weight: 700;
-    /*text-decoration: overline;*/
-  }
-.projects-section {
-  width: 100%;
-  text-align: left;
-  font-size: 2.5em;
-}
-  .main-logo {
-    width: 40%;
-    margin-top: 4%;
   }
 
+  
   .main-logo-mobile {
     display: none;
   }
@@ -360,13 +351,17 @@ a {
   font-size: 1.75em;
   line-height: 1.5em;
 }
-
+.section-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
   .project {
-    width: 33%;
-    margin: 0;
+    width: 317px;
+    min-height: 289px;
+    margin: 2% 1%;
     display: inline-block;
   }
-
 
 
   .project p,
