@@ -58,9 +58,7 @@ a {
 }
 
 
-.story-status {  
-  margin: 7% 0 0;
-}
+
 
 
 .project {
@@ -356,8 +354,11 @@ a {
     display: none;
   }
 
-.story {
-  background-position-y: 30%;
+.story-copy p {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.75em;
+  line-height: 1.5em;
 }
 
   .project {
@@ -365,13 +366,7 @@ a {
     margin: 0;
     display: inline-block;
   }
-  .currently p {
-    font-size: 1.75rem;
-    line-height: 4rem;
-  }
-  .currently-copy {
-    text-align: left;
-  }
+
 
 
   .project p,
