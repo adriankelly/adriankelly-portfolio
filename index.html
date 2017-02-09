@@ -34,40 +34,48 @@
           <h2 class="heading-job">Web Developer</h2>
         </div>
         <div class="story">
-        <div class="section--center currently">
-          <div class="mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone links">
-            <p class="currently-copy"><a href="#work">See my work</a>, or <a id="contact-link" href="#contact" class="contact">contact me directly</a>.
-              <br>I can also be found on <a href="https://www.linkedin.com/in/adriankellyweb">LinkedIn</a> and
-              <a href="https://github.com/adriankelly">GitHub</a>.</p>
-          </div>
-        </div>
-        <div class="section--center currently currently-status links">
-          <p class="mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone currently-copy">Currently I'm employed at <a href="https://www.candyspace.com/">Candyspace</a>, a digital agency based in London.
-            <br>I'm also available for freelance work.</p>
-        </div>
-      </div>
+          <div class="story-copy">
+            <div class="mdl-cell--1-offset-desktop  mdl-cell--6-col-tablet">
+              <p class="story-current"><a href="#work">See my work</a>, or <a id="contact-link" href="#contact" class="contact">contact me directly</a>.
+                <br>I can also be found on <a href="https://www.linkedin.com/in/adriankellyweb">LinkedIn</a> and
+                <a href="https://github.com/adriankelly">GitHub</a>.</p>
 
-        <section id="work" class="section--center mdl-grid">
-          <h2 class="projects-section">Projects</h2>
+              <p class="story-status">Currently I'm employed at <a href="https://www.candyspace.com/">Candyspace</a>, a digital agency based in London.
+                <br>I'm also available for freelance work.</p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+        <section class="section--center mdl-grid">
+
+
+
+
           <div class="mdl-card mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project project-breezeplease">
             <div class="mdl-card__title mdl-card--expand">
 
             </div>
             <div>
-              <a href="//breezeplease.com">
-                <h2 class="project-text">BreezePlease</h2>
+              <a class="project-title-link" href="//breezeplease.com">
+                <h2 class="project-title">BreezePlease</h2>
               </a>
-              <a href="//breezeplease.com">              
-<svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Ei-external-link" fill="#FFFFFF">
-            <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
-            <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
-            <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>
-</a>
+              <a href="//breezeplease.com">
+                <svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Ei-external-link" fill="#FFFFFF">
+                      <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
+                      <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
+                      <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z"
+                        id="Shape"></path>
+                    </g>
+                  </g>
+                  </svg>
+              </a>
               <p class="project-text project-text-body">AngularJS app that fetches current wind speed anywhere in the world</p>
               <ul class="mdl-card__project-copy">
                 <li>Built within the AngularJS framework employing custom filters, directives, services</li>
@@ -75,33 +83,36 @@
                 <li>Makes use of Amazon Web Services, with hosting of project in an S3 bucket</li>
                 <li>Accounts for user input of region and country to enable more accurate wind speed results</li>
                 <li>Animations and graphics are entirely CSS and react to the particular wind speed that is returned after user
-                  input</li>
+                  input
+                </li>
               </ul>
             </div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-js-button mdl-js-ripple-effect loadToggle read-more ">Read More</a>
+            <div class="read-more-wrap">
+              <a class="loadToggle read-more-btn ">Read More ^</a>
             </div>
           </div>
           <div class="mdl-card mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project project-chaustracks">
             <div id="project-img-chaustracks" class="mdl-card__title mdl-card--expand">
-              
+
             </div>
             <div>
-              <a href="//chaustracks.com">
-                <h2 class="project-text">ChausTracks</h2>
+              <a class="project-title-link" href="//chaustracks.com">
+                <h2 class="project-title">ChausTracks</h2>
               </a>
 
-<a href="//chaustracks.com">              
-<svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Ei-external-link" fill="#FFFFFF">
-            <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
-            <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
-            <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg> 
-</a>             
+              <a href="//chaustracks.com">
+                <svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Ei-external-link" fill="#FFFFFF">
+                      <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
+                      <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
+                      <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z"
+                        id="Shape"></path>
+                    </g>
+                  </g>
+                  </svg>
+              </a>
               <p class="project-text project-text-body">Music blog featuring curated list of tracks</p>
               <ul class="mdl-card__project-copy">
                 <li>Uses PHP throughout, with WordPress as the CMS for easy updating of content by authors</li>
@@ -121,24 +132,26 @@
 
           <div class="mdl-card mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project project-sketch">
             <div id="project-img-etchasketch" class="mdl-card__title mdl-card--expand">
-              
+
             </div>
             <div>
-              <a href="//adriankelly.github.io/etch-a-sketch/">
-                <h2 class="project-text">Etch-a-Sketch</h2>
+              <a class="project-title-link" href="//adriankelly.github.io/etch-a-sketch/">
+                <h2 class="project-title">Etch-a-Sketch</h2>
               </a>
-<a href="//adriankelly.github.io/etch-a-sketch/">
+              <a href="//adriankelly.github.io/etch-a-sketch/">
 
-<svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Ei-external-link" fill="#FFFFFF">
-            <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
-            <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
-            <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>   
-</a>
+                <svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Ei-external-link" fill="#FFFFFF">
+                      <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
+                      <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
+                      <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z"
+                        id="Shape"></path>
+                    </g>
+                  </g>
+                  </svg>
+              </a>
               <p class="project-text project-text-body">Creation of an Etch-a-Sketch canvas using JavaScript and jQuery. Project idea sourced from The Odin Project
                 - a web development training website</p>
               <ul class="mdl-card__project-copy">
@@ -155,23 +168,25 @@
 
           <div class="mdl-card mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project project-business">
             <div id="project-img-business-responsive" class="mdl-card__title mdl-card--expand">
-              
+
             </div>
             <div class="mdl-card__supporting-text">
-              <a href="//adriankelly.github.io/business-theme/">
-                <h2 class="project-text">Business Responsive</h2>
+              <a class="project-title-link" href="//adriankelly.github.io/business-theme/">
+                <h2 class="project-title">Business Responsive</h2>
               </a>
               <a href="//adriankelly.github.io/business-theme/">
-<svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Ei-external-link" fill="#FFFFFF">
-            <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
-            <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
-            <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>   
-</a>
+                <svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Ei-external-link" fill="#FFFFFF">
+                      <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
+                      <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
+                      <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z"
+                        id="Shape"></path>
+                    </g>
+                  </g>
+                  </svg>
+              </a>
 
               <p class="project-text project-text-body">Business themed responsive website</p>
               <ul class="mdl-card__project-copy">
