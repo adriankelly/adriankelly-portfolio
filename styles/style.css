@@ -2,10 +2,6 @@
   /*border: 1px solid red;*/
 }
 
-body {
-  background-color: #FEFEFA;
-}
-
 a {
   text-decoration: underline;
   color: white;
@@ -16,6 +12,11 @@ a {
 }
 
 .read-more-btn {
+  text-decoration: none;
+}
+
+.mdl-menu__container a {
+  color: #3A4957;
   text-decoration: none;
 }
 
@@ -126,6 +127,14 @@ a {
   padding: 7px;
   border-radius: 2px;
 }
+
+
+.noscroll {
+  position: fixed;
+}
+
+
+
 .section--center {
   max-width: 960px;
 }
@@ -149,11 +158,13 @@ a {
   text-align: center;
 }
 
-
+/*
 .mdl-layout__header {
   background-color: transparent;
   color: #3A4957;
-}
+}*/
+
+
 
 #main-nav a {
   color: #3A4957;
@@ -281,8 +292,8 @@ a {
 
 
 .typed-cursor{
-    font-size: 2.3rem;
-    padding-top: 0.4rem;
+    font-size: 1.4rem;
+    /*padding-top: 0.4rem;*/
     opacity: 0;
     -webkit-animation: blink 0.7s 8;
     -moz-animation: blink 0.7s 8;
@@ -327,8 +338,9 @@ a {
   }
   .links a:hover,
   #main-nav a:hover {
-    background-color: rgb(58, 73, 87);
-    color: #FAEBD7;
+    color: black;
+    font-weight: 700;
+    /*text-decoration: overline;*/
   }
 .projects-section {
   width: 100%;
