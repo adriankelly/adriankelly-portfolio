@@ -43,25 +43,27 @@ a {
   background-repeat: no-repeat;
   background-color: #1184B1;
   color: white;
-  margin: 0 auto;
+  padding: 5% 0;
 }
 
 
-.story {
+.story-copy {
+  /*border: 1px solid red;*/
   width: 90%;
   position: relative;
-  padding: 5%;
   margin: 0 auto;
-}
-
-.story-current {
-  margin: 0;
   font-size: 1.2em;
+  text-align: center;
 }
 
-.story-status {
-  font-size: 1.2em;  
+
+.story-status {  
   margin: 7% 0 0;
+}
+
+
+.project {
+  width: 90%;
 }
 
 .project-breezeplease {
@@ -85,11 +87,21 @@ a {
   text-align: center;
 }
 
-.project-text-body {
+.project-text {
   padding: 5%;
   color: white;
   text-align: center;
 }
+
+.project-text-body {
+  font-size: 0.7em;
+  padding-right: 6%;
+}
+.project-text-body li {
+  display: none;
+  color: white;
+}
+  
 
 .project-link-icon {
   display: block;
@@ -119,9 +131,6 @@ a {
 }
 
 
-.project {
-  width: 90%;
-}
 
 
 

@@ -12,8 +12,12 @@ $(document).ready(function () {
 
     var loadMoreActive = false;
     $('.loadToggle').click(function (e) {
+        
         var target = $(this);
-        var hiddenText = target.parent().prev('.mdl-card__supporting-text').children('ul').children('li');
+        console.log(target);
+        var hiddenText = target.parent().prev('.project-text-body').children('li');
+        console.log(target.parent().prev('.project-text-body'));
+        
         var suppTextSize = $(hiddenText).length;
         if (!target.hasClass('active')) {
             $(hiddenText).show(300);
