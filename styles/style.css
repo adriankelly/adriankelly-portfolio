@@ -98,12 +98,12 @@ a {
 
 .project-text-body {
   font-size: 0.7em;
-  padding-right: 6%;
   padding-top: 2%;
   margin-top: -15px;
   position: absolute;
   top: 300px;
   opacity: 0;
+  background-color: white;
 }
 .project-text-body li {
   color: black;
@@ -129,6 +129,7 @@ a {
     /*padding: 12px;  */
     padding: 12px 0;
     text-align: center;  
+    cursor: pointer;
 }
 
 .read-more-btn {
@@ -154,9 +155,7 @@ a {
 
 
 
-.project li {
-  margin: 0 auto;
-}
+
 
 .main-logo-mobile {
   display: block;
@@ -366,14 +365,15 @@ a {
 }
   .project {
     width: 317px;
-    height: 289px;
+    height: 275px;
     margin: 2% 1%;
   }
 
 
   .project p,
   .project li {
-    width: 80%;
+    width: 90%;
+    margin-top: 5px;
     font-size: 1rem;
   }
 
