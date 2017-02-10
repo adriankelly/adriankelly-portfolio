@@ -2,6 +2,7 @@
   /*border: 1px solid red;*/
 }
 
+
 a {
   text-decoration: underline;
   color: white;
@@ -96,10 +97,11 @@ a {
 .project-text-body {
   font-size: 0.7em;
   padding-right: 6%;
+
 }
 .project-text-body li {
-  display: none;
   color: white;
+    display: none;
 }
   
 
@@ -358,9 +360,8 @@ a {
 }
   .project {
     width: 317px;
-    min-height: 289px;
+    height: 289px;
     margin: 2% 1%;
-    display: inline-block;
   }
 
 
@@ -370,4 +371,12 @@ a {
     font-size: 1rem;
   }
 
+}
+
+
+
+
+
+.description {
+  height: 700px;
 }
