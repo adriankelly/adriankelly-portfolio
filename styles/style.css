@@ -64,6 +64,7 @@ a {
 
 .project {
   width: 90%;
+  overflow: visible;
 }
 
 .project-breezeplease {
@@ -94,14 +95,19 @@ a {
   margin: 0 auto;
 }
 
+
 .project-text-body {
   font-size: 0.7em;
   padding-right: 6%;
-
+  padding-top: 2%;
+  margin-top: -15px;
+  position: absolute;
+  top: 300px;
+  opacity: 0;
 }
 .project-text-body li {
-  color: white;
-    display: none;
+  color: black;
+  display: none;
 }
   
 

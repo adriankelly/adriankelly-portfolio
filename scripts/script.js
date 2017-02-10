@@ -19,13 +19,15 @@ $(document).ready(function () {
         var hiddenText = $(this).prev().children('li');
 
     if (!hiddenText.hasClass('active')) {
-        $(this).parent().animate({height: '700px'}, 300)
+        $(this).parent().animate({top: '-289px'}, 300)
+        hiddenText.parent().animate({opacity: '1'}, 300);
         hiddenText.show(300);
         btnText.html('Show Less');
         hiddenText.addClass('active');
     } else if (hiddenText.hasClass('active')) {
         hiddenText.hide(300);
-        $(this).parent().animate({height: '289px'}, 300);      
+        $(this).parent().animate({top: '0'}, 300);
+        hiddenText.parent().animate({opacity: '0'}, 300);
         btnText.html('Read More');
         hiddenText.removeClass('active');
     }
