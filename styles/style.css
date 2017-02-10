@@ -47,7 +47,7 @@ a {
   /*background-image: url('../img/bg2.jpg');*/
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #1184B1;
+  background-color: #5587A2;
   color: white;
   padding: 5% 0;
 }
@@ -72,27 +72,28 @@ a {
 }
 
 .project-breezeplease {
-  background-color: #0064A4;
+  background-color: #436380;
 }
 
 .project-chaustracks {
-  background-color: #1F1F20;
+  background-color: #998D7D;
 }
 
 .project-engine {
-  background-color: #622364;
+  /*background-color: #59656C;*/
+  background-color: #616161;  
 }
 
 .project-mp-game {
-  background-color: #622364;
+  background-color: #D09741;
 }
 
 .project-sketch {
-  background-color: #622364;
+  background-color: #925254;
 }
 
 .project-business {
-  background-color: #569EB5;
+  background-color: #1F1F20;
 }
 
 .project-title {
@@ -132,6 +133,7 @@ a {
 .multiplication {
   font-size: 30px;
 }
+
 
 .read-more-wrap {
     border-top: 1px solid rgba(0,0,0,.1);
