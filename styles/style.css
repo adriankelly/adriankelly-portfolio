@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+.project-text-body a {
+  color: black;
+}
+
 .read-more-btn {
   text-decoration: none;
 }
@@ -75,6 +79,14 @@ a {
   background-color: #1F1F20;
 }
 
+.project-engine {
+  background-color: #622364;
+}
+
+.project-mp-game {
+  background-color: #622364;
+}
+
 .project-sketch {
   background-color: #622364;
 }
@@ -116,7 +128,8 @@ a {
   margin: 0 auto;
 }
 
-.business {
+.business,
+.multiplication {
   font-size: 30px;
 }
 
@@ -352,11 +365,20 @@ a {
     display: none;
   }
 
+.story {
+  padding-bottom: 80px;
+}
+
+.story-copy {
+margin-left: 0;
+padding-left: 80px;
+}
+
 .story-copy p {
-  width: 75%;
-  margin: 0 auto;
   font-size: 1.75em;
   line-height: 1.5em;
+  text-align: left;
+  width: 40%;
 }
 .section-projects {
   display: flex;
