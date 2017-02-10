@@ -2,159 +2,251 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./mdl/material.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Adrian Kelly | Web Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./mdl/material.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Adrian Kelly | Web Developer</title>
 </head>
 
 <body>
-    <div id="main-container" class="custom-font">
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header has-tabs is-upgraded">
-            <!-- Large screen nav bar -->
-            <header class="mdl-layout__header mdl-layout--large-screen-only">
-                <div class="mdl-layout__header-row">
-                    <span id="main-nav-title" class="mdl-layout-title custom-font"></span>
-                    <div class="mdl-layout-spacer"></div>
-                    <nav id="main-nav" class="mdl-navigation">
-                        <a class="mdl-navigation__link" href="#work">Work</a>
-                        <a class="mdl-navigation__link contact" href="#contact">Contact</a>
-                        <a class="mdl-navigation__link" href="https://www.linkedin.com/in/adriankellyweb">LinkedIn</a>
-                        <a class="mdl-navigation__link" href="https://github.com/adriankelly">GitHub</a>
-                    </nav>
-                </div>
-            </header>
-            <main class="mdl-layout__content">
-                <!-- Mobile Logo -->
-                <div class="mdl-grid main-logo main-logo-mobile ">
-                    <h1 class="main-logo-mobile-name custom-font">adrian kelly</h1>
-                    <h2 class="main-logo-mobile-job custom-font">Web Developer</h2>
-                </div>
-                <div class="mdl-grid section--center currently">
-                    <div class="mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone links">
-                        <p class="currently-copy"><a href="#work">See my work</a>, or <a id="contact-link" href="#contact" class="contact">contact me directly</a>.
-                            <br>I can also be found on <a href="https://www.linkedin.com/in/adriankellyweb">LinkedIn</a> and
-                            <a href="https://github.com/adriankelly">GitHub</a>.</p>
-                    </div>
-                </div>
-                <div class="mdl-grid section--center currently currently-status links">
-                    <p class="mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone currently-copy">Currently I'm employed at <a href="https://www.candyspace.com/">Candyspace</a>, a digital agency based in London.
-                        <br>I'm also available for freelance work.</p>
-                </div>
-                <section id="work" class="section--center mdl-grid">
-                    <h2 class="work-heading custom-font">Projects</h2>
-                    <div class="mdl-card mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project">
-                        <div id="project-img-breezeplease" class="mdl-card__title mdl-card--expand">
-                            <a href="//breezeplease.com"><img src="./img/breezeplease.jpg" alt=""></a>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            <a href="//breezeplease.com"><h2 class="mdl-card__title-text">breezeplease</h2></a>
-                            <p>AngularJS app that fetches current wind speed anywhere in the world</p>
-                            <ul class="mdl-card__project-copy">
-                                <li>Built within the AngularJS framework employing custom filters, directives, services</li>
-                                <li>Using the $http AngularJS service, returns wind speed from the Yahoo Weather API</li>
-                                <li>Makes use of Amazon Web Services, with hosting of project in an S3 bucket</li>
-                                <li>Accounts for user input of region and country to enable more accurate wind speed results</li>
-                                <li>Animations and graphics are entirely CSS and react to the particular wind speed that is returned after user input</li>
-                            </ul>
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect loadToggle read-more custom-font">Read More</a>
-                        </div>
-                    </div>
-                    <div class="mdl-card mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project">
-                        <div id="project-img-chaustracks" class="mdl-card__title mdl-card--expand">
-                            <a href="//chaustracks.com"><img src="./img/chaustracks.jpg" alt=""></a>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            <a href="//chaustracks.com"><h2 class="mdl-card__title-text">chaustracks</h2></a>
-                            <p>Music blog featuring curated list of tracks</p>
-                            <ul class="mdl-card__project-copy">
-                                <li>Uses PHP throughout, with WordPress as the CMS for easy updating of content by authors</li>
-                                <li>Currently migrating site to a Virtual Private Cloud on Amazon Web Services, with an EC2 instance routed to an RDS instance that is within a private subnet</li>
-                                <li>AJAX employed for lazy loading of older posts on the homepage and for loading posts filtered by month on the archives page</li>
-                                <li>Site created within the Bootstrap framework, with Sass used as the CSS preprocessor</li>
-                            </ul>
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect loadToggle read-more custom-font">Read More</a>
-                        </div>
-                    </div>
-                    <div class="mdl-card mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project">
-                        <div id="project-img-etchasketch" class="mdl-card__title mdl-card--expand">
-                            <a href="//adriankelly.github.io/etch-a-sketch/"><img src="./img/etch-a-sketch.jpg" alt=""></a>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            <a href="//adriankelly.github.io/etch-a-sketch/"><h2 class="mdl-card__title-text">etch-a-sketch</h2></a>
-                            <p>Creation of an Etch-a-Sketch canvas using JavaScript and jQuery. Project idea sourced from The Odin Project - a web development training website</p>
-                            <ul class="mdl-card__project-copy">
-                                <li>Etch-a-Sketch canvas entirely generated with JavaScript and jQuery</li>
-                                <li>Expanded upon original project idea by including form validation and custom width of canvas</li>
-                                <li>Users have the option of generating a sketch using black or randomly generated colours</li>
-                            </ul>
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect loadToggle read-more custom-font">Read More</a>
-                        </div>
-                    </div>
-                    <div class="mdl-card mdl-cell mdl-cell--1-offset-desktop mdl-cell--1-offset-tablet mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project">
-                        <div id="project-img-business-responsive" class="mdl-card__title mdl-card--expand">
-                            <a href="//adriankelly.github.io/business-theme/"><img src="./img/business-responsive.jpg" alt=""></a>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            <a href="//adriankelly.github.io/business-theme/"><h2 class="mdl-card__title-text">business responsive</h2></a>
-                            <p>Business themed responsive website</p>
-                            <ul class="mdl-card__project-copy">
-                                <li>Built from a Photoshop design of the site's layout on a desktop computer, with relevant images being sliced from this design</li>
-                                <li>Without the ability to rely upon designs for the site on handheld devices, responsive layout changes were dicated by the appearance of the site at particular widths</li>
-                            </ul>
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect loadToggle read-more custom-font">Read More</a>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <div id="contact">
-                <div id="contact-container">
-                    <form id="contact-form" action="https://formspree.io/hello@adriankelly.net" method="post">
-                        <div class="mdl-textfield contact-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <textarea rows="8" name="name" id="msg-input" class="mdl-textfield__input"></textarea>
-                            <label class="mdl-textfield__label" for="msg-input">Message...</label>
-                        </div>
-                        <div class="mdl-textfield contact-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input id="emailInput" type="email" name="_replyto" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                            <label class="mdl-textfield__label" for="emailInput">Email...</label>
-                            <span class="mdl-textfield__error">Input is not a valid email</span>
-                        </div>
-                        <input type="submit" id="submit" value="Send" class="form-submit">
-                    </form>
-                    <div id="contact-close">&#215;</div>
-                </div>
-            </div>
-            <div id="contact-bg-cover"></div>
-            <div id="footer-nav" class="mdl-layout--small-screen-only">
-                <button id="mdl-menu-top-right" class="mdl-button mdl-js-button mdl-button--icon footer-nav--btn">
-                    <i class="material-icons">more_vert</i>
-                </button>
-                <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="mdl-menu-top-right">
-                    <li class="mdl-menu__item"><a href="#work">Work</a></li>
-                    <li class="mdl-menu__item contact">Contact</li>
-                    <li class="mdl-menu__item"><a href="https://www.linkedin.com/in/adriankellyweb">LinkedIn</a></li>
-                    <li class="mdl-menu__item"><a href="https://github.com/adriankelly">GitHub</a></li>
-                </ul>
-            </div>
+  <div id="main-container">
+    <div class="mdl-layout mdl-js-layout">
+      <!-- Large screen nav bar -->
+      <header class="mdl-layout--large-screen-only">
+        <div class="mdl-layout__header-row">
+          <span id="main-nav-title" class="mdl-layout-title "></span>
+          <div class="mdl-layout-spacer"></div>
+          <nav id="main-nav" class="mdl-navigation">
+            <a class="mdl-navigation__link" href="mailto:hello@adriankelly.net"><i class="fa fa-envelope-o fw" aria-hidden="true"></i>
+Email</a>
+            <a class="mdl-navigation__link" href="https://www.linkedin.com/in/adriankellyweb"><i class="fa fa-linkedin-square fw fa-lg" aria-hidden="true"></i> LinkedIn
+            </a>
+            <a class="mdl-navigation__link" href="https://github.com/adriankelly"><i class="fa fa-github fw fa-lg" aria-hidden="true"></i>
+GitHub</a>
+          </nav>
         </div>
+      </header>
+      <main class="mdl-layout__content">
+        <!-- Mobile Logo -->
+        <div class="mdl-grid main-logo main-logo-mobile ">
+          <h1 class="heading-name">Adrian Kelly</h1>
+          <h2 class="heading-job">Web Developer</h2>
+        </div>
+        <div class="story">
+          <div class="story-copy">
+            <div>
+              <p>
+                Currently I'm employed at <a href="https://www.candyspace.com/">Candyspace</a>, a digital agency based in
+                London.
+                <br />
+                <br />I'm also available for freelance work.
+              </p>
+            </div>
+          </div>
+        </div>
+        <section class="section--center mdl-grid section-projects">
+          <div class="mdl-card mdl-cell mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project project-breezeplease">
+            <div class="mdl-card__title">
+            </div>
+            <a class="project-title-link" href="//breezeplease.com">
+              <h2 class="project-title">BreezePlease</h2>
+            </a>
+            <a href="//breezeplease.com">
+              <svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Ei-external-link" fill="#FFFFFF">
+                    <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
+                    <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
+                    <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z"
+                      id="Shape"></path>
+                  </g>
+                </g>
+                </svg>
+            </a>
+            <p class="project-text">AngularJS app that provides current wind speed anywhere in the world.</p>
+            <ul class="project-text-body">
+              <li>Uses AngularJS, Bootstrap, jQuery, CSS Animations, Yahoo Weather API</li>
+              <li>Makes use of Amazon Web Services, with hosting of project in an S3 bucket</li>
+              <li>Allows for user input of region and country to enable more accurate wind speed results</li>
+            </ul>
+            <div class="read-more-wrap">
+              <a class="loadToggle read-more-btn ">Read More</a>
+            </div>
+          </div>
+          <div class="mdl-card mdl-cell mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project project-engine">
+            <div class="mdl-card__title">
+            </div>
+            <a class="project-title-link" href="//adriankelly.github.io/touch-engine-rotation/">
+              <h2 class="project-title">Engine Rotation</h2>
+            </a>
+            <a href="//adriankelly.github.io/touch-engine-rotation/">
+              <svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Ei-external-link" fill="#FFFFFF">
+                    <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
+                    <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
+                    <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z"
+                      id="Shape"></path>
+                  </g>
+                </g>
+                </svg>
+            </a>
+            <p class="project-text">Interactive prototype for rotation of an aircraft engine.</p>
+            <ul class="project-text-body">
+              <li>Uses Greensock, HTML5 video, JavaScript, jQuery</li>
+              <li>Created as a rapid proof-of-concept for an interactive engine that users could play with</li>
+              <li>Inspired by <a href="http://www.apple.com/mac-pro/">Apple Mac Pro website</a></li>
+            </ul>
+            <div class="read-more-wrap">
+              <a class="loadToggle read-more-btn ">Read More</a>
+            </div>
+          </div>
+          <div class="mdl-card mdl-cell mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project project-mp-game">
+            <div class="mdl-card__title">
+            </div>
+            <a class="project-title-link" href="//mp-game.herokuapp.com/">
+              <h2 class="project-title">Multiplication Game</h2>
+            </a>
+            <a href="//mp-game.herokuapp.com/">
+              <svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Ei-external-link" fill="#FFFFFF">
+                    <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
+                    <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
+                    <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z"
+                      id="Shape"></path>
+                  </g>
+                </g>
+                </svg>
+            </a>
+            <p class="project-text">Web application to help children understand multiplication.</p>
+            <ul class="project-text-body">
+              <li>Uses JavaScript, NodeJS, Express, Webpack, Heroku, ES6, Babel</li>
+              <li>When clicking a box, the multiples of the clicked number are highlighted, clicking again removes the highlight</li>
+              <li>Displays 3 numbers per row on desktop devices, 2 numbers per row on tablet, and 1 number per row on mobile</li>
+            </ul>
+            <div class="read-more-wrap">
+              <a class="loadToggle read-more-btn ">Read More</a>
+            </div>
+          </div>
+          <div class="mdl-card mdl-cell mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project project-chaustracks">
+            <div id="project-img-chaustracks" class="mdl-card__title">
+            </div>
+            <a class="project-title-link" href="//chaustracks.com">
+              <h2 class="project-title">ChausTracks</h2>
+            </a>
+            <a href="//chaustracks.com">
+              <svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Ei-external-link" fill="#FFFFFF">
+                    <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
+                    <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
+                    <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z"
+                      id="Shape"></path>
+                  </g>
+                </g>
+                </svg>
+            </a>
+            <p class="project-text">Music blog featuring curated list of all types of music.</p>
+            <ul class="project-text-body">
+              <li>Uses PHP, WordPress, SASS, AJAX, MySQL</li>
+              <li>AJAX used for lazy loading of older posts on the homepage and for loading posts filtered by month on the archives
+                page</li>
+              <li>Makes use of a parallax effect in the header when scrolling the homepage</li>
+            </ul>
+            <div class="read-more-wrap">
+              <a class="loadToggle read-more-btn ">Read More</a>
+            </div>
+          </div>
+          <div class="mdl-card mdl-cell mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project project-sketch">
+            <div id="project-img-etchasketch" class="mdl-card__title">
+            </div>
+            <a class="project-title-link" href="//adriankelly.github.io/etch-a-sketch/">
+              <h2 class="project-title">Etch-a-Sketch</h2>
+            </a>
+            <a href="//adriankelly.github.io/etch-a-sketch/">
+              <svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Ei-external-link" fill="#FFFFFF">
+                    <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
+                    <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
+                    <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z"
+                      id="Shape"></path>
+                  </g>
+                </g>
+                </svg>
+            </a>
+            <p class="project-text">Etch-a-Sketch game canvas using JavaScript and jQuery.</p>
+            <ul class="project-text-body">
+              <li>Uses JavaScript and jQuery</li>
+              <li>Expanded upon original project idea by including form validation and ability to customise width of canvas</li>
+              <li>Users have the option of generating a sketch using black or randomly generated colours</li>
+            </ul>
+            <div class="read-more-wrap">
+              <a class="loadToggle read-more-btn ">Read More</a>
+            </div>
+          </div>
+          <div class="mdl-card mdl-cell mdl-cell--10-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project project-business">
+            <div id="project-img-business-responsive" class="mdl-card__title">
+            </div>
+            <a class="project-title-link" href="//adriankelly.github.io/business-theme/">
+              <h2 class="project-title">Business Responsive</h2>
+            </a>
+            <a href="//adriankelly.github.io/business-theme/">
+              <svg class="project-link-icon" width="1.5rem" height="1.5rem" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Ei-external-link" fill="#FFFFFF">
+                    <polygon id="Shape" points="26.288 0.297 27.702 1.712 12.712 16.702 11.298 15.288"></polygon>
+                    <polygon id="Shape" points="28 10 26 10 26 2 18 2 18 0 28 0"></polygon>
+                    <path d="M23,28 L3,28 C1.3,28 0,26.7 0,25 L0,5 C0,3.3 1.3,2 3,2 L14,2 L14,4 L3,4 C2.4,4 2,4.4 2,5 L2,25 C2,25.6 2.4,26 3,26 L23,26 C23.6,26 24,25.6 24,25 L24,14 L26,14 L26,25 C26,26.7 24.7,28 23,28 Z"
+                      id="Shape"></path>
+                  </g>
+                </g>
+                </svg>
+            </a>
+            <p class="project-text">Business themed, responsive website built from a PSD design.</p>
+            <ul class=" project-text-body">
+              <li>Uses JavaScript, jQuery, CSS</li>
+              <li>Built from a Photoshop design of the desktop appearance, with images being sliced from this design</li>
+              <li>Without the ability to rely upon designs for the site on mobile devices, responsive layout changes were dicated
+                by the appearance of the site at particular widths</li>
+            </ul>
+            <div class="read-more-wrap">
+              <a class="loadToggle read-more-btn ">Read More</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div id="footer-nav" class="mdl-layout--small-screen-only">
+        <button id="mdl-menu-top-right" class="mdl-button mdl-js-button mdl-button--icon footer-nav--btn">
+<i class="material-icons">more_vert</i>
+</button>
+        <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="mdl-menu-top-right">
+          <li class="mdl-menu__item contact">
+            <a href="mailto:hello@adriankelly.net">Email</a>
+          </li>
+          <li class="mdl-menu__item"><a href="https://www.linkedin.com/in/adriankellyweb">LinkedIn</a></li>
+          <li class="mdl-menu__item"><a href="https://github.com/adriankelly">GitHub</a></li>
+        </ul>
+      </div>
     </div>
-    <!-- end of #main-container -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="./typed.min.js"></script>
-    <script src="./mdl/material.min.js"></script>
-    <script src="./script.js"></script>
+  </div>
+  <!-- end of #main-container -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="./scripts/typed.min.js"></script>
+  <script src="./mdl/material.min.js"></script>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>

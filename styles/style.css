@@ -1,0 +1,306 @@
+a {
+  text-decoration: underline;
+  color: white;
+}
+
+.project-title-link {
+  text-decoration: none;
+}
+
+.project-text-body a {
+  color: black;
+}
+
+.read-more-btn {
+  text-decoration: none;
+}
+
+.mdl-menu__container a {
+  color: #3A4957;
+  text-decoration: none;
+}
+
+#main-container {
+  color: #3A4957;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.heading-name {
+  font-weight: 200;
+  text-align: center;
+  margin: 0;
+}
+
+.heading-job {
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
+
+.story {
+  width: 100%;
+  background-position: 0 12%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #5587A2;
+  color: white;
+  padding: 5% 0;
+}
+
+.story-copy {
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.story-copy p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.project {
+  width: 90%;
+  overflow: visible;
+}
+
+.project-breezeplease {
+  background-color: #436380;
+}
+
+.project-chaustracks {
+  background-color: #A67356;
+}
+
+.project-engine {
+  background-color: #59656C;
+  /*background-color: #616161;  */
+}
+
+.project-mp-game {
+  background-color: #D09741;
+}
+
+.project-sketch {
+  background-color: #925254;
+}
+
+.project-business {
+  background-color: #1F1F20;
+}
+
+.project-title {
+  font-weight: 200;
+  text-align: center;
+  font-size: 30px;  
+}
+
+.project-text {
+  padding: 5%;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.project-text-body {
+  font-size: 1em;
+  padding-top: 2%;
+  margin-top: -15px;
+  position: absolute;
+  top: 300px;
+  opacity: 0;
+  background-color: white;
+}
+
+.project-text-body li {
+  color: black;
+  display: none;
+}
+
+.project-link-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.read-more-wrap {
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  font-size: 16px;
+  line-height: normal;
+  width: 100%;
+  background-color: transparent;
+  padding: 12px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.read-more-btn {
+  width: 50px;
+  height: 35px;
+  padding: 7px;
+  border-radius: 2px;
+}
+
+.section--center {
+  max-width: 1024px;
+}
+
+.main-logo-mobile {
+  display: block;
+  padding-top: 2rem;
+}
+
+#main-nav a {
+  color: #3A4957;
+  cursor: pointer;
+}
+
+.mdl-card__title {
+  color: #fff;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#footer-nav {
+  background-color: transparent;
+  position: fixed;
+  bottom: 5%;
+  right: 7%;
+  z-index: 10;
+  color: #FAEBD7;
+}
+
+.footer-nav--btn {
+  min-width: 42px;
+  min-height: 42px;
+}
+
+#mdl-menu-top-right {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main-logo {
+  width: 80%;
+}
+
+
+.typed-cursor {
+  font-size: 1.4rem;
+  opacity: 0;
+  -webkit-animation: blink 0.7s 8;
+  -moz-animation: blink 0.7s 8;
+  animation: blink 0.7s 8;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .story {
+    background-image: url('../img/bg3mod.jpg');
+  }
+  .story-copy {
+    width: 100%;
+  }
+  .story-copy p {
+    font-size: 1.7em;
+    margin: 0 auto;
+    line-height: 1.5em;
+    text-align: center;
+    width: 60%;
+  }
+  .section-projects {
+    justify-content: center;
+  }
+  .project-text {
+    font-size: 1em;
+  }
+  .project-text-body {
+    width: 90%;
+    font-size: 1.2em;
+    margin-top: 15px;
+  }
+}
+
+
+/*Large Screen*/
+
+@media only screen and (min-width: 1024px) {
+  #main-nav a {
+    font-size: 1.25rem;
+    padding-top: 0.25rem;
+  }
+  .links a:hover,
+  #main-nav a:hover {
+    color: black;
+    font-weight: 700;
+  }
+  .main-logo-mobile {
+    display: none;
+  }
+  .story {
+    padding-bottom: 140px;
+    background-position: 0 40%;
+  }
+  .story-copy {
+    margin-left: 0;
+    padding-left: 80px;
+  }
+  .story-copy p {
+    font-size: 1.75em;
+    line-height: 1.5em;
+    text-align: left;
+    width: 40%;
+    margin: 0;
+  }
+  .section-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project {
+    width: 317px;
+    height: 275px;
+    margin: 2% 1%;
+  }
+  .project p,
+  .project li {
+    width: 90%;
+    margin-top: 5px;
+    font-size: 1.1rem;
+  }
+}
