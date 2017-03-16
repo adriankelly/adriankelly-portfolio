@@ -64,6 +64,10 @@ a {
   overflow: visible;
 }
 
+.project-couch-recipe {
+  background-color: #58857A;
+}
+
 .project-breezeplease {
   background-color: #436380;
 }
@@ -112,6 +116,7 @@ a {
   background-color: white;
 }
 
+
 .project-text-body li {
   color: black;
   display: none;
@@ -120,6 +125,8 @@ a {
 .project-link-icon {
   display: block;
   margin: 0 auto;
+  width: 20px;
+  height: 20px;
 }
 
 .read-more-wrap {
@@ -254,6 +261,7 @@ a {
     font-size: 1.2em;
     margin-top: 15px;
   }
+
 }
 
 
@@ -302,5 +310,9 @@ a {
     width: 90%;
     margin-top: 5px;
     font-size: 1.1rem;
+  }
+
+  .project-couch-recipe li {
+    font-size: 0.9rem;
   }
 }
