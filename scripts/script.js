@@ -8,16 +8,13 @@ $(document).ready(function () {
         for (i in s) l.addEventListener(i, s)
     })(document); // sticky hover fix in iOS
 
-    $(function () {
-        $("#main-nav-title").typed({
-            strings: ["Adrian Kelly // Web Developer."],
-            typeSpeed: 0,
-            startDelay: 2000,
-            cursorChar: "&#x2588;"
-        });
-    });
-
-
+    $('.mdl-layout__content').scroll(function() {
+        if($('.mdl-layout__content').scrollTop() >= 50) {
+            $('#js-header').addClass('header-bg', 250);
+        } else {
+            $('#js-header').removeClass('header-bg', 500);
+        }
+    })
 
     $('.read-more-wrap').click(function () {
         var btnText = $(this).children('.read-more-btn');
@@ -48,3 +45,4 @@ $(document).ready(function () {
     })
 
 });
+

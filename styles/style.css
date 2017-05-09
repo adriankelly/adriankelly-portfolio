@@ -23,32 +23,55 @@ a {
 #main-container {
   color: #3A4957;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
 }
 
 .heading-name {
   font-weight: 200;
+  font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   margin: 0;
 }
 
 .heading-job {
   font-size: 2em;
+  font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   margin: 0;
 }
 
+
+.mdl-navigation__link:hover {
+  text-decoration: underline;
+}
+.mdl-navigation__link {
+  font-weight: 300;
+}
+
+.mdl-layout--large-screen-only {
+  background-color: #EAEAEA;
+}
+
+.header-bg {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#main-nav-title {
+  font-weight: 400;
+  border-left: 7px solid #8BA755;
+  padding-left: 10px;
+}
+
+
 .story {
   width: 100%;
-  background-position: 0 12%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #5587A2;
-  color: white;
+  background-color: #EAEAEA;
   padding: 5% 0;
 }
 
 .story-copy {
   width: 90%;
+  font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
   position: relative;
   margin: 0 auto;
   text-align: center;
@@ -61,7 +84,16 @@ a {
 
 .project {
   width: 90%;
+  border-radius: 10px;
   overflow: visible;
+}
+
+.project-ghcontributor {
+  background-color: #8BA755;
+}
+
+.project-react-photo-feed {
+  background-color: #5CADFD;
 }
 
 .project-couch-recipe {
@@ -78,7 +110,6 @@ a {
 
 .project-engine {
   background-color: #59656C;
-  /*background-color: #616161;  */
 }
 
 .project-mp-game {
@@ -101,6 +132,7 @@ a {
 
 .project-text {
   padding: 5%;
+  font-weight: 300;
   color: white;
   text-align: center;
   margin: 0 auto;
@@ -108,6 +140,7 @@ a {
 
 .project-text-body {
   font-size: 1em;
+  font-weight: 300;
   padding-top: 2%;
   margin-top: -15px;
   position: absolute;
@@ -200,6 +233,10 @@ a {
   animation-fill-mode: forwards;
 }
 
+  .section-projects {
+    justify-content: center;
+  }
+
 @keyframes blink {
   0% {
     opacity: 0;
@@ -236,12 +273,16 @@ a {
   }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 885px) {
   .story {
-    background-image: url('../img/bg3mod.jpg');
+    background-image: url('../img/001.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 110% 75%;
   }
   .story-copy {
-    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
   }
   .story-copy p {
     font-size: 1.7em;
@@ -250,9 +291,7 @@ a {
     text-align: center;
     width: 60%;
   }
-  .section-projects {
-    justify-content: center;
-  }
+
   .project-text {
     font-size: 1em;
   }
@@ -272,27 +311,28 @@ a {
     font-size: 1.25rem;
     padding-top: 0.25rem;
   }
-  .links a:hover,
+  /*.links a:hover,
   #main-nav a:hover {
-    color: black;
-    font-weight: 700;
-  }
+    color:#44AFF9;
+  }*/
+
   .main-logo-mobile {
     display: none;
   }
   .story {
     padding-bottom: 70px;
-    background-position: 0 40%;
+    background-size: 60%;
+    background-position: 100% 90%;
+  
   }
   .story-copy {
-    margin-left: 0;
     padding-left: 80px;
   }
   .story-copy p {
     font-size: 1.75em;
     line-height: 1.5em;
     text-align: left;
-    width: 40%;
+    max-width: 55%;
     margin: 0;
   }
   .section-projects {
@@ -304,6 +344,7 @@ a {
     width: 317px;
     height: 275px;
     margin: 2% 1%;
+    margin-bottom: 20px;
   }
   .project p,
   .project li {
@@ -314,5 +355,18 @@ a {
 
   .project-couch-recipe li {
     font-size: 0.9rem;
+  }
+}
+
+
+@media only screen and (min-width: 1500px) {
+  .story {
+    background-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .story {
+    background-size: 40%;
   }
 }

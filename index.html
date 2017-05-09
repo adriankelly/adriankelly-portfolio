@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./mdl/material.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300|Roboto:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/style.css">
-  <title>Adrian Kelly | Web Developer</title>
+  <title>Adrian Kelly // Web Developer</title>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -26,16 +26,16 @@
   <div id="main-container">
     <div class="mdl-layout mdl-js-layout">
       <!-- Large screen nav bar -->
-      <header class="mdl-layout--large-screen-only">
+      <header id="js-header" class="mdl-layout--large-screen-only">
         <div class="mdl-layout__header-row">
-          <span id="main-nav-title" class="mdl-layout-title "></span>
+          <span id="main-nav-title" class="mdl-layout-title ">Adrian Kelly // Web Developer</span>
           <div class="mdl-layout-spacer"></div>
           <nav id="main-nav" class="mdl-navigation">
-            <a class="mdl-navigation__link" href="mailto:hello@adriankelly.net"><i class="fa fa-envelope-o fw" aria-hidden="true"></i>
+            <a class="mdl-navigation__link" href="mailto:hello@adriankelly.net">
 Email</a>
-            <a class="mdl-navigation__link" href="https://www.linkedin.com/in/adriankellyweb"><i class="fa fa-linkedin-square fw fa-lg" aria-hidden="true"></i> LinkedIn
+            <a class="mdl-navigation__link" href="https://www.linkedin.com/in/adriankellyweb">LinkedIn
             </a>
-            <a class="mdl-navigation__link" href="https://github.com/adriankelly"><i class="fa fa-github fw fa-lg" aria-hidden="true"></i>
+            <a class="mdl-navigation__link" href="https://github.com/adriankelly">
 GitHub</a>
           </nav>
         </div>
@@ -49,11 +49,49 @@ GitHub</a>
         <div class="story">
           <div class="story-copy">
             <div>
-              <p>Experienced Web Developer, fluent in HTML5, CSS3, and JavaScript with exposure to Angular 1.x, Angular 2, Node.js/Express, and CouchDB.<br><br>Self-motivated in work ethic and a clear communicator, I embrace all opportunities to apply my skills in achieving outstanding results.</p>
+              <p>Experienced Web Developer, fluent in HTML5, CSS3, and JavaScript with exposure to React, Redux, Angular, Node.js/Express, and CouchDB.<br><br>Self-motivated in work ethic and a clear communicator, I embrace all opportunities to apply my skills in achieving outstanding results.</p>
             </div>
           </div>
         </div>
         <section class="section--center mdl-grid section-projects">
+          <div class="mdl-card mdl-cell mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project project-ghcontributor">
+            <div class="mdl-card__title">
+            </div>
+            <a class="project-title-link" href="//ghcontributor.herokuapp.com">
+              <h2 class="project-title">ghContributor</h2>
+            </a>
+            <a href="//ghcontributor.herokuapp.com">
+              <img class="project-link-icon" src="./img/external-link.png">
+            </a>
+            <p class="project-text">A React/Redux app that ranks the top contributors in a GitHub organisation.</p>
+            <ul class="project-text-body">
+              <li>Combines two GitHub API endpoints, fetching a list of repositories from an organisation and creating a running total of individual user's contributions across these repositories</li>
+              <li>Uses Redux Thunk for asynchronous API calls, Redux for managing state</li>
+              <li>Deployed on Heroku, running on a Node.js server using Express</li>
+            </ul>
+            <div class="read-more-wrap">
+              <a class="loadToggle read-more-btn ">Read More</a>
+            </div>
+          </div>
+          <div class="mdl-card mdl-cell mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project project-react-photo-feed">
+            <div class="mdl-card__title">
+            </div>
+            <a class="project-title-link" href="//reactphotofeed.herokuapp.com">
+              <h2 class="project-title">React Photo Feed</h2>
+            </a>
+            <a href="//reactphotofeed.herokuapp.com">
+              <img class="project-link-icon" src="./img/external-link.png">
+            </a>
+            <p class="project-text">React, Redux, Express app fetching the latest Flickr photos, filterable by tag name.</p>
+            <ul class="project-text-body">
+              <li>Consumes the public <a href="//api.flickr.com/services/feeds/photos_public.gne?format=json">Flickr API</a> to provide a feed of the most recently posted photos which can then be filtered by tag name</li>
+              <li>Uses Redux for maintaining application state, including action creators, actions, reducers etc. Also uses Redux Thunk for asynchronous API calls</li>
+              <li>Deployed as a Node.js app on Heroku</li>
+            </ul>
+            <div class="read-more-wrap">
+              <a class="loadToggle read-more-btn ">Read More</a>
+            </div>
+          </div>
           <div class="mdl-card mdl-cell mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp project project-couch-recipe">
             <div class="mdl-card__title">
             </div>
@@ -65,7 +103,7 @@ GitHub</a>
             </a>
             <p class="project-text">Angular 2, Node, CouchDB app demonstrating example recipe reviews.</p>
             <ul class="project-text-body">
-              <li>Uses Angular 2, Node.js/Express, CouchDB (NoSQL). Deployed on an AWS EC2 instance</li>
+              <li>Uses Angular 2, Node.js/Express, CouchDB (NoSQL). Deployed on an Google Cloud Compute Engine</li>
               <li>Node.js exposes API endpoints for storing/retrieving recipe ratings from a CouchDB database</li>
               <li>Clicking star ratings component passes changes to a recipe-list parent component. An Angular 2 service (using Angular 2 HttpModule) calls the Node server, updating the CouchDB database with the new rating</li>
             </ul>
@@ -85,7 +123,6 @@ GitHub</a>
             <p class="project-text">AngularJS app that provides current wind speed anywhere in the world.</p>
             <ul class="project-text-body">
               <li>Uses AngularJS, Bootstrap, jQuery, CSS Animations, Yahoo Weather API</li>
-              <li>Makes use of Amazon Web Services, with hosting of project in an S3 bucket</li>
               <li>Allows for user input of region and country to enable more accurate wind speed results</li>
             </ul>
             <div class="read-more-wrap">
@@ -206,9 +243,11 @@ GitHub</a>
     </div>
   </div>
   <!-- end of #main-container -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="./scripts/typed.min.js"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
   <script src="./mdl/material.min.js"></script>
   <script src="./scripts/script.js"></script>
 </body>
